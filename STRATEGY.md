@@ -73,7 +73,18 @@ We apply the core philosophies of the industry's most successful next-gen tools:
 
 1. **Social Viralness**: Using Material You "Rice" to gain traction (r/unixporn).
 2. **Performance Proof**: Matching CachyOS benchmarks in silicon-native (v3) tests.
-3. **Retention Loop**: Deep Pixel/Cloud integration creates a high switching cost.
+3. **Upgrade Stability**: The **Lumina-Stable** curated repo gives users "Ubuntu-level" stability on "Arch-level" speed.
+4. **Retention Loop**: Deep Pixel/Cloud integration creates a high switching cost.
+
+---
+
+## 7. Community Sovereignty: The Widget Market
+
+To turn Lumina OS into a movement, we empower the creators:
+
+- **Registry of One**: A global, decentralized registry for **Shadcn-style widgets**.
+- **Lumina SDK**: A simple toolset for developers to build "Reactive Modules" that others can `lumina add` to their desktops.
+- **The "Bazaar"**: A beautiful UI within the dashboard to browse community-created themes, layouts, and automation scripts.
 
 ### Phase A: Hardware Optimization & Ownership
 

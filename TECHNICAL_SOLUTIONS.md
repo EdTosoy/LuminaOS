@@ -23,11 +23,21 @@ The Rust core manages a **Virtual Root** (`~/.lumina`).
 - **Safety First**: The binary creates standard symlinks from your profile to target locations. If the binary is removed, your config stays active.
 - **Atomic Sync**: It only touches files that have changed in the registry, reducing the risk of system corruption.
 
-### Layer 3: The Coordinator
+### Layer 3: The Coordinator (Stable Upgrades)
 
-The binary acts as a transparent wrapper for `pacman`, `paru`, and `git`. When you install a package via `lumina install`, it is auto-recorded in your registry for reproducibility.
+The binary orchestrates system changes with a focus on **Upstream Safety**.
+
+- **Lumina-Stable**: A curated repository that lags behind Arch upstream by 24-48 hours to ensure compatibility with Lumina desktop modules.
+- **Atomic Operations**: `lumina update` automatically triggers a Btrfs/ZFS snapshot before any change, allowing for instant rollback if a dependency breaks.
 
 ---
+
+## 2. Solving "The First 5 Minutes" (The Entrance)
+
+A professional workstation shouldn't have a "leaky" setup experience.
+
+- **The Life-Cycle Installer (Agentic ISO)**: The installer detects your Framework hardware modules and auto-tunes the UI (scaling, drivers, fonts) during the live session.
+- **Lumina Welcome Flow**: Post-installation, the **Lumina Assistant** guides the user through linking their Pixel and initializing their first `lumina.yaml` registry.
 
 ## 2. Solving "Environment Drift" (Contextual Flow)
 
