@@ -16,6 +16,16 @@ Lumina OS is the "Anti-Apple" workstation. We believe professional computing bel
 
 ---
 
+## 🎯 Target Audience: The "Open Professional"
+
+Lumina OS is built for builders. It is specifically designed for:
+
+- **MacBook Professionals** who are ready to transition to **Modular Hardware (Framework)** without losing design polish.
+- **Software Engineers** who demand a **"Zero-Drag"** terminal experience and AI-integrated workflows.
+- **Hardware Enthusiasts** who value **Repairability** and want an OS that visualizes their hardware's modular depth.
+
+---
+
 ## ✨ Key Features
 
 | Feature | Description |
