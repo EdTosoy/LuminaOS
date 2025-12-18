@@ -1,90 +1,138 @@
-# Phase 1: Implementation Checkpoints (Mission Log)
+# Phase 1: Hyper-Granular Mission Log (Foundations)
 
-This document provides granular, "No-Vagueness" directives for AI agents executing Phase 1: **The Orchestrator Core**.
+This document provides absolute-clarity directives for AI agents. **Do not deviate from these architectural constraints.**
 
 ---
 
 ## 🟢 Mission 1: Environment & Scaffolding
 
-*Goal: Establish a production-ready Rust environment with ARM multi-arch validation.*
+*Goal: Establish a production-ready, multi-arch Rust workspace.*
 
-- [ ] **Checkpoint 1.1: Cargo Scaffold**
-  - Initialize a new Rust binary project.
-  - Setup a workspace structure if needed (e.g., `lumina-core`, `lumina-cli`).
-  - **Success**: `cargo build` passes locally.
-- [ ] **Checkpoint 1.2: Multi-Arch CI**
-  - Create `.github/workflows/ci.yml` with `cross-rs` or `cargo-zigbuild`.
-  - Add job for `aarch64-unknown-linux-gnu` cross-compilation.
-  - **Success**: GitHub Actions builds both x86 and ARM successfully.
-- [ ] **Checkpoint 1.3: CLI Foundations**
-  - Implement `clap` v4 with subcommands: `init`, `sync`, `add`, `status`.
-  - Stub out the handlers for each subcommand.
-  - **Success**: `lumina --help` shows correct subcommands.
+### [ ] Checkpoint 1.1: Cargo Workspace Scaffold
 
----
+- **Task**: Initialize a Rust workspace to separate the CLI frontend from the logic backend.
+- **Directives**:
+  - `cargo new lumina` (The binary/CLI gatekeeper).
+  - `cargo new lumina-core --lib` (All business logic: registry, pathing, symlinking).
+  - Use `[workspace]` in a top-level `Cargo.toml`.
+- **Architectural Guardrail**:
+  - Do NOT put logic in `main.rs`. Keep the CLI layer thin.
+- **Verification**: `cargo build` must succeed with zero warnings.
 
-## 🟡 Mission 2: Registry & State Parsing
+### [ ] Checkpoint 1.2: Multi-Arch CI (AARCH64)
 
-*Goal: Implement the safe, declarative YAML engine.*
+- **Task**: Implement GitHub Actions that verify ARM cross-compilation.
+- **Directives**:
+  - Use `actions-rs/cargo@v1` with the `cross` tool.
+  - Targets: `x86_64-unknown-linux-gnu` AND `aarch64-unknown-linux-gnu`.
+- **Architectural Guardrail**:
+  - If a crate does not support `aarch64`, it must be replaced at this stage.
+- **Verification**: Check GitHub Actions tab for successful builds on both architectures.
 
-- [ ] **Checkpoint 2.1: Schema Definition**
-  - Map the `lumina.yaml` schema to Rust structs using `Serde`.
-  - Support `modules`, `metadata`, and `orchestration` blocks.
-  - **Success**: Test suite parses a sample `lumina.yaml` without error.
-- [ ] **Checkpoint 2.2: Virtual Root Pathing**
-  - Implement logic to resolve `~/.lumina` and handle environment variables (XDG spec).
-  - **Success**: Unit test confirms correct path resolution on Linux.
-- [ ] **Checkpoint 2.3: Validation Engine**
-  - Add logic to verify if source files exist before attempting to sync.
-  - **Success**: CLI returns a clean error if a registry entry points to a missing file.
+### [ ] Checkpoint 1.3: CLI Anatomy (Clap v4)
 
----
-
-## 🟠 Mission 3: The Shadow Linker (The "Director")
-
-*Goal: Execute atomic, safe symlinking from the Virtual Root.*
-
-- [ ] **Checkpoint 3.1: Staging Logic**
-  - Implement the "Shadow" directory (`~/.lumina/staging/`) where configs are pre-validated.
-  - **Success**: CLI can copy files into the staging area.
-- [ ] **Checkpoint 3.2: Collision & Backup**
-  - Implement "Move-to-Bak": If a file exists at the target, rename it to `.bak` before linking.
-  - **Success**: Existing `~/.bashrc` is safely backed up before being replaced by a symlink.
-- [ ] **Checkpoint 3.3: Atomic Symlinking**
-  - Execute the final symlink creation using `std::os::unix::fs::symlink`.
-  - **Success**: File at `~/.config/hypr/hyprland.conf` is a verifiable link to the `~/.lumina` registry.
+- **Task**: Implement the base CLI structure with subcommands.
+- **Directives**:
+  - Crates: `clap` (with `derive` and `string` features).
+  - Commands: `init` (flags for hardware), `sync` (dry-run flag), `status` (JSON output flag).
+- **Verification**: Run `cargo run -- --help` and verify all commands and flags are documented correctly.
 
 ---
 
-## 🔴 Mission 4: Hardware Awareness
+## 🟡 Mission 2: Registry & State Engine
 
-*Goal: Detect modular hardware (Framework) to apply optimized profiles.*
+*Goal: The "Soul" of the OS—safe, declarative, and stateless.*
 
-- [ ] **Checkpoint 4.1: DMI/Sysfs Detection**
-  - Implement a Rust module to read `/sys/class/dmi/id/board_name`.
-  - Detect "Laptop-13-AMD" or "Laptop-16".
-  - **Success**: `lumina status` correctly identifies the hardware model.
-- [ ] **Checkpoint 4.2: Automated Profile Selection**
-  - Logic to inject Framework-specific kernel parameters or Hyprland scaling based on detection.
-  - **Success**: `lumina init` produces a YAML pre-configured for the detected hardware.
+### [ ] Checkpoint 2.1: Semantic Schema (Serde)
+
+- **Task**: Map `lumina.yaml` to Rust structs with strict type safety.
+- **Directives**:
+  - Crates: `serde`, `serde_yaml`, `schemars` (for JSON schema generation).
+  - Support `Optional` fields and defaults (e.g., `enabled: true` if missing).
+- **Verification**: Create `tests/schema_validation.rs` that fails if a malformed YAML is passed.
+
+### [ ] Checkpoint 2.2: Virtual Root resolution (XDG/Paths)
+
+- **Task**: Logic to compute absolute paths correctly across machines.
+- **Directives**:
+  - Crates: `dirs`, `camino` (for UTF-8 path safety).
+  - Logic: Defaults to `~/.config/lumina/` but respects `LUMINA_HOME` env var.
+- **Verification**: Unit test that mock-resolves a path in a temporary directory.
+
+### [ ] Checkpoint 2.3: Integrity Pre-Flight
+
+- **Task**: A function that checks if every `source` path in the YAML exists.
+- **Directives**:
+  - Return a grouped error report (don't fail on the first error).
+- **Verification**: `lumina sync --dry-run` must report missing files as "WARNING" or "ERROR" without stopping the parse.
+
+---
+
+## 🟠 Mission 3: The Shadow Linker
+
+*Goal: Atomic, non-destructive symlinking logic.*
+
+### [ ] Checkpoint 3.1: Staging Operations
+
+- **Task**: Create a "Staging Area" in `~/.lumina/staging`.
+- **Directives**:
+  - Logic: Copy registry files into staging to verify content before linking.
+- **Architectural Guardrail**:
+  - Never link directly from a Git repo to a system path; always go through staging to allow for "Pre-Link" transformation services.
+- **Verification**: Verify files appear in `~/.lumina/staging` after `lumina sync --stage-only`.
+
+### [ ] Checkpoint 3.2: Collision & Backup Logic
+
+- **Task**: Implement "Safe-Replace" via `.bak`.
+- **Directives**:
+  - Logic: If file `~/.zshrc` exists and is NOT a symlink, rename to `~/.zshrc.bak_<timestamp>`.
+  - If it IS a symlink to a Lumina path, overwrite it.
+- **Verification**: Run sync on a machine with existing configs and verify `.bak` files are created.
+
+### [ ] Checkpoint 3.3: Atomic Link Execution
+
+- **Task**: Perform the final `ln -s` equivalent in Rust code.
+- **Directives**:
+  - Use relative symlinks where possible to preserve portability.
+- **Verification**: `ls -l ~/.config/hypr` must point to the Lumina staging area.
+
+---
+
+## 🔴 Mission 4: Hardware Intelligence (Framework)
+
+*Goal: Machine-specific profile injection.*
+
+### [ ] Checkpoint 4.1: DMI Probing
+
+- **Task**: Read the system's hardware ID.
+- **Directives**:
+  - Read `/sys/class/dmi/id/product_name` directly (no external shell-out).
+- **Verification**: CLI prints "Hardware Detected: Framework Laptop 13 (AMD)" on boot.
+
+### [ ] Checkpoint 4.2: Profile Overlays
+
+- **Task**: Merge hardware-specific YAML snippets into the main config.
+- **Directives**:
+  - Logic: `base.yaml` + `framework_amd.yaml`.
+- **Verification**: `lumina status` shows which hardware-specific modules are active.
 
 ---
 
 ## 🟣 Mission 5: The Native Bootstrap (Welcome Flow)
 
-*Goal: The first 5-minute experience on a live system.*
+*Goal: The first 5 minutes.*
 
-- [ ] **Checkpoint 5.1: CLI-Based Welcome**
-  - Implement a `lumina welcome` command that guides the user through Git setup and Registry creation.
-  - **Success**: User has a functional `lumina.yaml` in `~/.config/lumina/` after wizard completion.
-- [ ] **Checkpoint 5.2: Matugen Auto-Generation**
-  - Logic to pick a default "Lumina Gold/Obsidian" palette based on hardware detection.
-  - **Success**: System colors shift to the primary Lumina palette immediately after init.
+### [ ] Checkpoint 5.1: Interactive Wizard
 
----
+- **Task**: A CLI-based setup wizard for new users.
+- **Directives**:
+  - Crates: `dialoguer` or `inquire`.
+  - Steps: Git URL -> Identity Name -> Hardware Confirmation.
+- **Verification**: Run `lumina welcome` and verify a valid `lumina.yaml` is generated at the end.
 
-## 🚀 Final Verification (Phase 1 Exit)
+### [ ] Checkpoint 5.2: Matugen Initializer
 
-- [ ] **Checkpoint 5.1: The "Clean Machine" Test**
-  - On a fresh Arch install, run `lumina init && lumina sync`.
-  - **Success**: Full desktop environment is functional in under 60 seconds.
+- **Task**: Trigger the first color-generation on a raw system.
+- **Directives**:
+  - Logic: Pick a primary color from the Lumina brand book if no wallpaper is set.
+- **Verification**: System colors shift to "Lumina Gold" after the first `sync`.

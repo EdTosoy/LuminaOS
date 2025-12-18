@@ -1,53 +1,63 @@
-# Phase 3: Implementation Checkpoints (Agentic Shell)
+# Phase 3: Hyper-Granular Mission Log (Agentic Shell)
 
-This document provides granular directives for Phase 3: **The "Agentic" OS**.
+This document provides absolute-clarity directives for AI agents executing Phase 3.
 
 ---
 
 ## 🟢 Mission 1: Global Semantic Search
 
-*Goal: A single, intelligent index for local files and Google Cloud assets.*
+*Goal: Intelligent indexing of local and cloud files.*
 
-- [ ] **Checkpoint 1.1: Local File Indexer**
-  - Implement a background crawler (using `notify` for real-time updates) that indexes file names and metadata.
-  - **Success**: `lumina search <query>` returns local file paths in < 50ms.
-- [ ] **Checkpoint 1.2: Google Cloud Pillars**
-  - Authenticate with Google Drive/Workspace APIs.
-  - Index document titles and "Last Modified" headers.
-  - **Success**: HUD search returns both local project files and corresponding Google Docs.
-- [ ] **Checkpoint 1.3: Natural Language Querying**
-  - Use a small local LLM or Gemini API to map NL queries to file paths/commands.
-  - **Success**: "Find that Rust project I worked on yesterday" returns the correct directory.
+### [ ] Checkpoint 1.1: Local Metadata Indexer
+
+- **Task**: A background service that indexes files via `inotify`.
+- **Directives**:
+  - Crates: `notify-rust` (for monitoring) and `tantivy` (The full-text search engine).
+- **Verification**: `lumina search` finds a file created 1 second ago.
+
+### [ ] Checkpoint 1.2: LLM Query Mapping (Gemini)
+
+- **Task**: Convert natural language queries into search filters.
+- **Directives**:
+  - Prompt: "Map 'files from yesterday' to a search query: `modified:>2025-12-16`."
+- **Verification**: NL search for "that rust file" returns the correct path.
 
 ---
 
 ## 🟡 Mission 2: Framework Module Dashboard
 
-*Goal: Deep hardware integration with modular expansion cards.*
+*Goal: Hardware-Aware UI integration.*
 
-- [ ] **Checkpoint 2.1: Sysfs Module Mapping**
-  - Map Framework expansion cards (USB-A, HDMI, Storage) to UI icons.
-  - Monitor power draw and health per module.
-  - **Success**: Dashboard displays: "Slot 1: HDMI (Active), Slot 3: 250GB Expansion (Healthy)."
-- [ ] **Checkpoint 2.2: Hot-Swap Safety Shell**
-  - Visual warning when a storage module is removed without unmounting.
-  - **Success**: System triggers a notification and safely attempts unmount before hardware release.
-- [ ] **Checkpoint 2.3: Thermal/Fan Curves**
-  - Interactive sliders to override fan curves for Framework-specific thermal profiles.
-  - **Success**: User can toggle "Silent Mode" or "Performance Mode" from the main HUD.
+### [ ] Checkpoint 2.1: Sysfs Module Discovery
+
+- **Task**: Detect Framework expansion cards.
+- **Directives**:
+  - Logic: Scan `/sys/bus/usb/devices` to identify specific Framework IDs for DisplayPort, HDMI, and Storage modules.
+- **Verification**: Dashboard UI shows a visual map of the 4/6 expansion slots.
+
+### [ ] Checkpoint 2.2: Hot-Swap Safety logic
+
+- **Task**: Prevent data loss on storage expansion removal.
+- **Directives**:
+  - Logic: Hook into `udev` events. If a storage module is pulled, check for active mounts and alert.
+- **Verification**: Pull a dummy USB and verify the Lumina notification fires.
 
 ---
 
-## 🟠 Mission 3: The "Bazaar" (Community Marketplace)
+## 🟠 Mission 3: The Bazaar (Marketplace)
 
-*Goal: Decentralized registry for Shadcn-style widgets and automation.*
+*Goal: Decentralized community ecosystem.*
 
-- [ ] **Checkpoint 3.1: Registry API**
-  - Implement the `lumina add <widget>` logic to download source code from GitHub/GitLab.
-  - **Success**: Widget code is placed in `~/.lumina/widgets/` and instantly available for editing.
-- [ ] **Checkpoint 3.2: Bazaar UI**
-  - Reactive dashboard to "Browse" featured community themes and modules.
-  - **Success**: User can see screenshots of community themes before installing.
-- [ ] **Checkpoint 3.3: Developer SDK**
-  - Standardized templates for building custom Lumina widgets.
-  - **Success**: A developer can run `lumina widget-init` to scaffold a new UI module.
+### [ ] Checkpoint 3.1: Bazaar Pull/Push API
+
+- **Task**: Subcommand `lumina bazaar install <widget>`.
+- **Directives**:
+  - Logic: Clone Git repos into `~/.lumina/bazaar/` and symlink into active UI paths.
+- **Verification**: Install a community widget and see it appear in the HUD instantly.
+
+### [ ] Checkpoint 3.2: Developer SDK (CLI Scaffold)
+
+- **Task**: A tool to help people build for Lumina OS.
+- **Directives**:
+  - Command: `lumina init-widget`.
+- **Verification**: Generated widget project compiles and runs out of the box.

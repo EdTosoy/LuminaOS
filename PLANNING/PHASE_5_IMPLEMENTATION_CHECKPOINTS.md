@@ -1,48 +1,41 @@
-# Phase 5: Implementation Checkpoints (Ecosystem & Autonomy)
-
-This document provides granular directives for Phase 5: **The "Magic" ISO & Autonomy**.
+# Phase 5: Hyper-Granular Mission Log (Ecosystem & Autonomy)
 
 ---
 
-## 🟢 Mission 1: The "Magic" ISO (Life-Cycle Installer)
+## 🟢 Mission 1: The "Magic" ISO (Installer)
 
-*Goal: A zero-touch, hardware-aware installer that delivers Lumina OS in < 5 minutes.*
+*Goal: Zero-touch installation for Framework hardware.*
 
-- [ ] **Checkpoint 1.1: Custom ISO Scaffold**
-  - Use `archiso` to build a live environment with the Lumina CLI and Hyprland pre-baked.
-  - **Success**: The ISO boots directly into a "Lumina Welcome" UI session.
-- [ ] **Checkpoint 1.2: Calamares/Custom Welcome Flow**
-  - Create a Material You themed installer that asks for **Google Credentials** and **Identity Profile** first.
-  - **Success**: User completes the wizard and enters a functional desktop without terminal input.
-- [ ] **Checkpoint 1.3: Post-Install "Magic" Sync**
-  - Installer automatically clones the user's registry from Git and runs `lumina sync` as the final step.
-  - **Success**: The first login looks identical to the user's previous machine.
+### [ ] Checkpoint 1.1: Automated Archer (Archiso)
 
----
+- **Task**: Build a custom Arch Linux ISO.
+- **Directives**:
+  - Include the `lumina` binary in the `/usr/bin/` of the live image.
+- **Verification**: ISO boots into a Lumina-branded wallpaper with a "Setup" terminal.
 
-## 🟡 Mission 2: Full Agentic Autonomy (Observer -> Assistant)
+### [ ] Checkpoint 1.2: Identity-First Wizard
 
-*Goal: Transitioning from read-only HUD to a proactive system collaborator.*
-
-- [ ] **Checkpoint 2.1: Proactive Action Bus**
-  - Implement a "Safe Execution" layer where Gemini can suggest and (with approval) run `lumina` commands.
-  - **Success**: Agent suggests: "I noticed your theme is out of sync with your Google Calendar event 'Night Shift'. Shall I update the palette?"
-- [ ] **Checkpoint 2.2: Automated Mission Generation**
-  - AI logic to suggest new Mission profiles based on the user's local projects.
-  - **Success**: Agent detects a Python project and asks to create a `python-mission` container image.
-- [ ] **Checkpoint 2.3: Global Workflow Optimization**
-  - Proactive notification cleaning and window tiling adjustments based on gaze/activity patterns.
-  - **Success**: Non-relevant windows are minimized/moved to secondary workspaces during high-intensity CPU missions.
+- **Task**: Setup wizard that pulls the Git registry before Disk partitioning.
+- **Directives**:
+  - Requirement: If the user provides a Git URL, pull the `lumina.yaml` and use its `metadata` to define the install (e.g., disk layout, hostname).
+- **Verification**: User enters Git URL, and the machine completes the install without further prompts.
 
 ---
 
-## 🟠 Mission 3: The "Closed Loop" Support
+## 🟡 Mission 2: Full Agentic Autonomy
 
-*Goal: System-aware bug reporting and self-healing.*
+*Goal: Proactive assistance.*
 
-- [ ] **Checkpoint 3.1: Snapshot-Aware Bug Reports**
-  - Automatically attach the current `lumina.yaml` and latest Btrfs snapshot ID to GitHub issue reports.
-  - **Success**: Bug reports include everything needed to reproduce the user's exact system state.
-- [ ] **Checkpoint 3.2: Self-Healing Binary**
-  - Logic to detect broken symlinks or missing dependencies and offer a "Lumina Repair" mission.
-  - **Success**: User clicks "Repair" and the system re-runs local validation/fix logic.
+### [ ] Checkpoint 2.1: Action Proposal Bus
+
+- **Task**: AI logic that asks for permission to execute system changes.
+- **Directives**:
+  - UI: A "Toast" notification with "Approve" and "Deny" buttons.
+- **Verification**: HUD suggests a Mission switch based on time of day, and clicking "Approve" executes the switch.
+
+### [ ] Checkpoint 2.2: Self-Healing Logic
+
+- **Task**: Automated diagnosis of a "Broken" state.
+- **Directives**:
+  - Logic: If a symlink points to nothing, attempt a `git pull` on the registry to re-acquire the source.
+- **Verification**: Intentionally delete a config file and see the system repair it automatically.

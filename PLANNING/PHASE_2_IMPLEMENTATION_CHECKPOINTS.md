@@ -1,67 +1,90 @@
-# Phase 2: Implementation Checkpoints (Intelligence & Isolation)
+# Phase 2: Hyper-Granular Mission Log (Intelligence & Isolation)
 
-This document provides granular directives for Phase 2: **The "Observer" Hub**.
+This document provides absolute-clarity directives for AI agents executing Phase 2.
 
 ---
 
 ## 🟢 Mission 1: Mission-Aware Isolation (Podman)
 
-*Goal: Decouple project development from the host OS using rootless containers.*
+*Goal: Rootless dev environments decoupled from the host OS.*
 
-- [ ] **Checkpoint 1.1: Mission Container Engine**
-  - Implement a Rust wrapper for Podman/Docker commands.
-  - Define "Mission Profiles" in `lumina.yaml` (Base image, volume mounts, env vars).
-  - **Success**: `lumina mission start <name>` launches a rootless container with project files mounted.
-- [ ] **Checkpoint 1.2: Terminal Hooking**
-  - Automatically inject container shell into active terminal sessions when entering a project directory.
-  - **Success**: Entering `~/Projects/nebula` changes the shell prompt to indicate the "Mission" environment.
-- [ ] **Checkpoint 1.3: Toolchain Virtualization**
-  - Ensure common tools (Cargo, NPM, Pip) run inside the container but map output to host project dir.
-  - **Success**: `cargo build` inside a mission produces a `target/` folder visible on the host.
+### [ ] Checkpoint 1.1: Podman Orchestration wrapper
+
+- **Task**: Create a Rust abstraction for managing Podman containers.
+- **Directives**:
+  - Crates: `bollard` (if using Docker socket) or command-line wrappers for `podman` (safer for rootless).
+  - Logic: Parse "Mission" blocks in `lumina.yaml` to define volume mounts and image tags.
+- **Verification**: `lumina mission up <name>` launches a container that successfully mounts the local project directory.
+
+### [ ] Checkpoint 1.2: Shell Environment Injection
+
+- **Task**: Implement a shell hook (`zsh`/`bash`) that detects when the user is inside a "Mission" directory.
+- **Directives**:
+  - Logic: `lumina status --check-dir` called via `precmd` or `chpwd`.
+  - Effect: Automatically alias commands like `cargo` to `podman exec -it <mission> cargo`.
+- **Verification**: `cd ~/Projects/my-app` and verify `which cargo` points to the containerized version.
 
 ---
 
 ## 🟡 Mission 2: The Gemini Observer (HUD)
 
-*Goal: A non-agentic, read-only intelligence layer for system-awareness.*
+*Goal: The non-agentic read-only system intelligence layer.*
 
-- [ ] **Checkpoint 2.1: HUD Overlay (Hyprland)**
-  - Create a lightweight sidebar/overlay using EWW or Gtk4.
-  - Implement a toggle keybind (Super+G) to show/hide the Observer.
-  - **Success**: Sidebar appears/disappears smoothly without layout shift.
-- [ ] **Checkpoint 2.2: State Polling & Summarization**
-  - CLI logic to pipe system logs (journalctl) and compiler errors to Gemini Flash API.
-  - Summarize the "Current Problem" into a single, actionable sentence in the HUD.
-  - **Success**: HUD displays "MISSION ERROR: Rust build failed due to missing 'tokio' dependency."
-- [ ] **Checkpoint 2.3: Contextual Info-Cards**
-  - Detect current active window and surface relevant docs or mission metadata.
-  - **Success**: While in VSCode, HUD shows a link to our `DX_SPEC.md` or a "Mission Dashboard."
+### [ ] Checkpoint 2.1: HUD Shell (EWW/Gtk)
+
+- **Task**: Implement the visual sidebar in Hyprland.
+- **Directives**:
+  - Crates/Tools: `eww` (Elkowar's Wacky Widgets) or a custom Gtk4-RS app.
+  - Requirement: Must be positioned as a Layer-Shell (Overlay) that does not steal focus by default.
+- **Verification**: Super+G toggles the bar. `top` shows minimal CPU usage (< 1%).
+
+### [ ] Checkpoint 2.2: Contextual Log Summarizer
+
+- **Task**: Logic to pipe system events to Gemini API.
+- **Directives**:
+  - Logic: Listen to `journalctl -f` and parse for "Error" tags.
+  - Prompt: "Summarize this system error into a 10-word actionable tip for a developer."
+- **Architectural Guardrail**:
+  - Do NOT send personal data; sanitize logs for usernames/IPs before sending to the cloud.
+- **Verification**: Trigger a fake system error and see the HUD update with a summary.
 
 ---
 
 ## 🟠 Mission 3: Contextual Flow (Event Bus)
 
-*Goal: The system reacts to your mission state in real-time.*
+*Goal: Real-time system reactivity.*
 
-- [ ] **Checkpoint 3.1: Reactive Event Bus**
-  - Implement a lightweight D-Bus or Socket-based bus for system events (Project change, Battery low, Phone sync).
-  - **Success**: CLI publishes "PROJECT_CHANGED" event when the user `cd`s into a mission dir.
-- [ ] **Checkpoint 3.2: Theme Kinetix**
-  - Automatically update Waybar colors and Wallpaper when a Mission starts (e.g., Green for Code, Red for Security Audit).
-  - **Success**: System palette shifts instantly when a mission is activated.
-- [ ] **Checkpoint 3.3: Notification Shadowing**
-  - Suppress non-priority notifications while a "Deep Work" mission is active.
-  - **Success**: System enters "Do Not Disturb" automatically upon mission start.
+### [ ] Checkpoint 3.1: D-Bus Event Publisher
+
+- **Task**: Implement a D-Bus service for Lumina events.
+- **Directives**:
+  - Crates: `zbus`.
+  - Common Events: `ModuleChanged`, `ThemeUpdated`, `FocusMissionStarted`.
+- **Verification**: Use `dbus-monitor` to see Lumina events firing in real-time.
+
+### [ ] Checkpoint 3.2: Kinetix Palette Swapping
+
+- **Task**: Connect the Event Bus to the Matugen engine.
+- **Directives**:
+  - Logic: When a "Mission" starts, trigger `matugen` with the mission's custom color seed.
+- **Verification**: System colors change automatically when switching directories in the terminal.
 
 ---
 
-## 🟣 Mission 4: Pixel & Google Ecosystem Sync
+## 🟣 Mission 4: Pixel & Google Sync
 
-*Goal: The "Shared OS" experience between mobile and desktop.*
+*Goal: Identity-based ecosystem integration.*
 
-- [ ] **Checkpoint 4.1: KDE-Connect/Lumina Bridge**
-  - Implement a specialized mission that bridges phone notifications and clipboard sharing into the HUD.
-  - **Success**: Phone battery and SMS notifications appear in the Observer HUD.
-- [ ] **Checkpoint 4.2: Google Cloud Pillar Storage**
-  - Integrate a FUSE-based mount or CLI tool to sync workspace assets directly into a mission.
-  - **Success**: Google Drive files appear as a local directory inside the containerized mission.
+### [ ] Checkpoint 4.1: Phone Bridge (KDEConnect-RS)
+
+- **Task**: Integration with phone notification streams.
+- **Directives**:
+  - Sync Clipboard and Battery Status into the HUD.
+- **Verification**: Phone battery level is visible in the Lumina Waybar/HUD.
+
+### [ ] Checkpoint 4.2: Workspace Drive Mount
+
+- **Task**: Mount Google Drive as a local folder.
+- **Directives**:
+  - Tool: `rclone` or a custom OIDC implementation in Rust.
+- **Verification**: `ls ~/Drive` shows your Google Workspace files.
