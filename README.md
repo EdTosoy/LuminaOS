@@ -85,6 +85,7 @@ The Lumina OS vision is codified across these core documents:
 
 ### 📑 Production Planning & Governance
 
+- **[PLANNING/PROJECT_TIMELINE.md](file:///home/johncarlojose/Projects/luminaOS/PLANNING/PROJECT_TIMELINE.md)**: 12-month delivery schedule and milestones (2025).
 - **[PLANNING/SYSTEM_ARCHITECTURE_ADR.md](file:///home/johncarlojose/Projects/luminaOS/PLANNING/SYSTEM_ARCHITECTURE_ADR.md)**: Architectural Decision Records (Why we chose Rust, OCI, etc).
 - **[PLANNING/SECURITY_ARCHITECTURE_ADR.md](file:///home/johncarlojose/Projects/luminaOS/PLANNING/SECURITY_ARCHITECTURE_ADR.md)**: Deep dive into the OS security model and Mission sandboxing.
 - **[PLANNING/PHASE_1_TECHNICAL_SPEC.md](file:///home/johncarlojose/Projects/luminaOS/PLANNING/PHASE_1_TECHNICAL_SPEC.md)**: Detailed technical blueprint for the Rust orchestrator.
