@@ -41,6 +41,7 @@ Lumina OS is built on the shoulders of giants. We apply:
 
 - **Zero to One**: Creating a 10x shift in workstation recovery and longevity.
 - **Jobs to be Done**: Focusing on the human outcomes of focus and autonomy.
+- **The Science of Focus**: Treating **Attention** as a finite system resource (See [PRODUCTIVITY_ENGINE.md](file:///home/johncarlojose/Projects/luminaOS/PRODUCTIVITY_ENGINE.md)).
 - **Conceptual Integrity**: A unified system directed by a single Rust-core orchestrator.
 
 Explore our full [Product Wisdom Library](file:///home/johncarlojose/Projects/luminaOS/PRODUCT_WISDOM.md).
@@ -76,6 +77,7 @@ The Lumina OS vision is codified across these core documents:
 
 - **[MANIFESTO.md](file:///home/johncarlojose/Projects/luminaOS/MANIFESTO.md)**: Our beliefs and binary DNA.
 - **[STRATEGY.md](file:///home/johncarlojose/Projects/luminaOS/STRATEGY.md)**: Market position, target audience, and R&D logic.
+- **[PRODUCTIVITY_ENGINE.md](file:///home/johncarlojose/Projects/luminaOS/PRODUCTIVITY_ENGINE.md)**: The science of "Zero-Drag" focus and flow.
 - **[FUTURE_TRENDS_2030.md](file:///home/johncarlojose/Projects/luminaOS/FUTURE_TRENDS_2030.md)**: Foresight into the evolution of modularity and AI orchestration.
 - **[WHY_LUMINA.md](file:///home/johncarlojose/Projects/luminaOS/WHY_LUMINA.md)**: The human motivations (Focus, Autonomy, Longevity).
 - **[PRODUCT_WISDOM.md](file:///home/johncarlojose/Projects/luminaOS/PRODUCT_WISDOM.md)**: Industry-leading frameworks (Zero to One, JTBD) applied to OS design.
