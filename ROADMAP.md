@@ -4,45 +4,34 @@
 
 ---
 
-## 🟢 Phase 1: The Visual Core (Est. Q1 2025)
+## 🟢 Phase 1: The "Shadow" & Core Stability (Q1 2025)
 
-*Focus: Establishing the Material You identity and the ChromeOS layout.*
+*Focus: Foundation, State Management, and Modular UI.*
 
 - [x] **Material You Engine**: Integration of `matugen` into Hyprland and Waybar.
-- [ ] **Lumina CLI (v0.1)**: Initial Rust tool for theme management and **Stateless Profile** syncing.
-- [ ] **Longevity Engine (v0.1)**: Benchmarking and silicon-native (v3/v4) system optimizations.
-- [ ] **Lumina-Shelf**: A custom Waybar configuration that mimics the ChromeOS bottom bar (Pill-shaped modules).
-- [ ] **Palette Daemon**: A background service that watches the wallpaper and updates terminal/browser colors in real-time.
+- [ ] **Lumina CLI (v0.1)**: Core Rust tool for **Stateless Profile** syncing (The "Director").
+- [ ] **Shadow-Linker (MVP)**: Implementing the `~/.lumina` unified root with safe symlinking.
+- [ ] **Lumina-Shelf**: Essential Waybar configuration (Pill-shaped modules).
+- [ ] **Longevity Engine (v0.1)**: Initial silicon-native (v3/v4) system optimizations.
 
 ---
 
-## 🔵 Phase 2: The Connectivity Layer (Est. Q2-Q3 2025)
+## 🔵 Phase 2: Contextual Intelligence (Q2-Q3 2025)
 
-*Focus: Deep integration with Google hardware and services.*
+*Focus: Seamless orchestration and proactive observation.*
 
-- [ ] **PixelHub Widget**: A Quickshell-powered system tray applet for Pixel status and hot-toggles.
-- [ ] **Auto-Pairing**: One-click setup for KDE Connect and `scrcpy` specific to Lumina OS aesthetics.
-- [ ] **Global Clipboard**: Native synchronization between the Arch computer and the Pixel phone.
-
----
-
-## 🟣 Phase 3: The Intelligence Layer (Est. Q4 2025)
-
-*Focus: Agentic features and system-aware AI.*
-
-- [ ] **Lumina Assistant**: A sidebar (replacing the current LLM setup) that has read-access to system logs, file structures, and active workspaces.
 - [ ] **Contextual Flow**: Automatic environment and notification switching based on project directory.
-- [ ] **Reactive Event Bus**: Native OS notification system for real-time widget updates (Convex-style).
-- [ ] **Contextual Commands**: "Lumina Assistant, summarize the PDF I just downloaded to Downloads."
-- [ ] **Lumina Search**: A global search that indices both local files and Google workspace data.
+- [ ] **Reactive Event Bus**: Native OS notification system for real-time widget updates.
+- [ ] **Lumina Assistant (Observer)**: A sidebar with read-access to system logs and metadata.
+- [ ] **PixelHub Widget**: System tray applet for Pixel status and hot-toggles.
 
 ---
 
-## 🔥 Phase 4: Hardware & Optimization (Est. 2026)
+## 🟣 Phase 3: The Agentic Shell (Q4 2025+)
 
-*Focus: Performance leadership and hardware specific patches.*
+*Focus: Proactive automation and global integration.*
 
-- [ ] **CachyOS Base Integration**: Defaulting to the BORE scheduler for all Lumina OS installs.
+- [ ] **Lumina Assistant (Agent)**: Enabling proactive "Code-Actions" and system-wide automation.
+- [ ] **Lumina Search**: Global index of local files and Google Workspace data.
 - [ ] **Framework Module Dashboard**: Hardware-aware UI for expansion card management.
-- [ ] **Battery Optimizer**: Custom power profiles specifically for laptops running Lumina OS.
-- [ ] **Lumina-ISO**: A custom installation script that turns a fresh Arch install into a full Lumina OS workstation in one command.
+- [ ] **Life-Cycle Installer**: A custom script to turn vanilla Arch into Lumina OS in one command.

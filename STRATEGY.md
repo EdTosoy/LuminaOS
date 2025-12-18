@@ -42,9 +42,8 @@ Unlike MacOS, which is tuned for one specific chip, our OS is tuned for the **Mo
 We apply the core philosophies of the industry's most successful next-gen tools:
 
 - **Ownership** (Shadcn style): You "pull" the OS source; you don't just "install" a package.
-- **Reactivity** (Convex style): The shell is a real-time reactive environment.
-- **Invisible Context**: No manual "modes." The OS senses your work (via Git/Dir context) and adapts.
-- **Consolidation** (Bun style): A single, fast `lumina` binary for all system logic.
+- **Fail-Safe Reactivity**: The shell and binary follow a "Layered" approach. If the brain fails, the body (the OS) stays standing.
+- **Invisible Context**: No manual "modes." The OS senses your work via lightweight shell hooks.
 - **The Longevity Engine**: Software designed to make 5-year-old modular hardware feel faster than new "soldered" machines through silicon-native optimization (`v3/v4`).
 
 ---
@@ -54,8 +53,8 @@ We apply the core philosophies of the industry's most successful next-gen tools:
 If we want to solve a global problem, we solve **E-Waste**.
 
 - **Silicon-Native**: We compile the desktop shell specifically for the CPU generation (v3/v4) found in Framework laptops.
-- **The "Fluid" Scheduler**: Using Google's R&D in thread management to ensure the UI stays at 120Hz/144Hz even during heavy compiles or gaming.
-- **Zero-Bloat Foundation**: By avoiding the "Electron-everywhere" trap of modern OSs, we preserve RAM and CPU cycles for the user's *actual* work.
+- **The "Core-First" Logic**: We prioritize system stability over flashy AI. We build a rock-solid, reproducible core before layering agentic automation.
+- **Zero-Bloat Foundation**: By avoiding the "Electron-everywhere" trap, we preserve RAM and CPU cycles for the user's *actual* work.
 
 ---
 

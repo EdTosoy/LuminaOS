@@ -8,37 +8,35 @@ This document details the technical implementation of our two most ambitious "Fr
 
 **The Goal**: A single Git-mappable OS profile that ensures your machine is reproducible in minutes, not days.
 
-### Technical Architecture (Stateless)
+## 1. Solving "Dotfile Debt" (Stateless Core)
 
-1. **The Unified Root (`~/.lumina`)**:
-    * Instead of scattered dotfiles, all Lumina OS configurations (Hyprland, Waybar, Matugen, Zsh, AI Hooks) live inside a single, version-controlled directory: `~/.lumina`.
-    * Lumina OS uses a **Shadow-Linker** (Rust binary) that symlinks these files to their traditional locations (e.g., `~/.config/hypr`) but monitors them for changes.
+Instead of a single "Magic Binary," the `lumina` tool follows a **Layered Architecture** to ensure system stability.
 
-2. **State Declaration (`lumina.yaml`)**:
-    * A declarative file where you define:
-        * **Packages**: List of essential packages (`pacman` + `aur`).
-        * **Secrets**: Pointers to your encrypted secret store (for API keys).
-        * **Aliases**: Global shell shortcuts.
+### Layer 1: The Registry (`lumina.yaml`)
 
-3. **One-Command Recovery**:
-    * On a fresh Arch install, running `lumina sync <repo-url>` clones your profile, installs your packages, and applies your "Material You" theme instantly.
+A simple YAML file that declares the state of the system (packages, symlinks, themes). This is your single source of truth.
+
+### Layer 2: The Safe-Linker (MVP)
+
+The Rust core manages a **Virtual Root** (`~/.lumina`).
+
+- **Safety First**: The binary creates standard symlinks from your profile to target locations. If the binary is removed, your config stays active.
+- **Atomic Sync**: It only touches files that have changed in the registry, reducing the risk of system corruption.
+
+### Layer 3: The Coordinator
+
+The binary acts as a transparent wrapper for `pacman`, `paru`, and `git`. When you install a package via `lumina install`, it is auto-recorded in your registry for reproducibility.
 
 ---
 
-## 2. Solving "Environment Drift" with Contextual Flow
+## 2. Solving "Environment Drift" (Contextual Flow)
 
-**The Goal**: Zero-friction transitions between projects. The OS follows your lead, it doesn't wait for a command.
+To avoid "Binary Anxiety" and resource bloat, we use the **Hook Pattern**.
 
-### Technical Architecture (Contextual)
-
-1. **The "Flow" Trigger**:
-    * No "Mission Center" to manage. Lumina OS simply watches your `cwd` (Current Working Directory).
-    * If you `cd` into a directory with a `.git` or `package.json`, the OS silently activates that "Flow."
-
-2. **Invisible Orchestration**:
-    * **Auto-Layout**: If it's your first time in the project, it tiles windows normally. If it's your 10th time, it restores your preferred window positions for *that specific project*.
-    * **Smart Silencing**: Notifications are filtered by *relevance* to the project. If you're in a Rust project, GitHub notifications pass through; Instagram does not.
-    * **Implicit Environment**: Variables are loaded via a lightweight Rust-based `env-watcher` that is faster and more stable than traditional shell hooks.
+- **The Trigger**: A lightweight shell hook (e.g., in `.zshrc`) that pings the `lumina` binary when you change directories.
+- **The Execution**: `lumina flow --dir <PWD>` checks for project markers (`.git`, `package.json`).
+- **Orchestration**: It tells Hyprland to apply a specific layout and Waybar to toggle modules for that workspace.
+- **Fail-Safe**: If the binary crashes, your environment remains untouched. There is no background "Daemon" that can hang your system.
 
 ---
 
