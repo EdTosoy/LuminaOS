@@ -26,6 +26,15 @@ Lumina OS is built for builders. It is specifically designed for:
 
 ---
 
+## 🩹 Pain Points We Solve
+
+- **Arch Anxiety**: Eliminating the maintenance burden of rolling-release systems.
+- **Walled Gardens**: Providing the polish of premium ecosystems without the hardware lock-in.
+- **Context Overload**: Reducing cognitive load through agentic, system-aware AI.
+- **Config Debt**: Shifting from "Configuration" to "Code Ownership" (Shadcn-style).
+
+---
+
 ## ✨ Key Features
 
 | Feature | Description |

@@ -57,4 +57,25 @@ The core of the experience is that the OS "feels" the wallpaper.
 ## 4. Projections: Interaction Design
 
 - **Gestures**: 3-finger swipe up for Workspace Overview (mimicking Android's multitasker).
-- **Quick-Search**: `Super + Space` opens a centralized, Material-styled search bar that serves as an App Launcher, Calculator, and LLM Portal.
+- **Lumina Assistant**: `Super + Space` opens a centralized, Material-styled search bar that serves as an App Launcher, Calculator, and **Agent Portal**.
+- **AI Immersion**: The Assistant "ghosts" through the system—it monitors terminal errors, summarizes folder contents in the file manager, and provides "Code-Action" suggestions in real-time.
+
+---
+
+## 5. Reactive UI Logic (The "Living" Shell)
+
+The Lumina Shell is a **State Receiver**. It does not poll.
+
+- **Hardware-Reactive**: Swapping a Framework expansion card triggers a smooth transformation animation in the Shelf.
+- **Cloud-Reactive**: A new file in Google Drive triggers a subtle "Pulse" in the file manager icon.
+- **Theme-Reactive**: Changing the wallpaper triggers a system-wide "Color Wave" that propagates through all open windows using `matugen-kinetix`.
+
+---
+
+## 6. Ownership of Design (Shadcn Style)
+
+In Lumina OS, the UI is **Open Source Distribution**:
+
+- **Source Widgets**: Every Waybar module (Weather, Clock, Battery) is at `/home/user/.config/lumina/widgets/`.
+- **Edit on the Fly**: To change the battery icon's animation, you edit the CSS/JS directly in your home directory. No "locked" system themes.
+- **Rebase Philosophy**: You can "pull" new widget designs from the Lumina repo and merge them into your custom mods.

@@ -12,20 +12,20 @@ To truly compete with a "Pixel for Arch," Google products shouldn't just be tabs
 
 | Product | Integration Method | The "Lumina OS" Experience |
 | :--- | :--- | :--- |
-| **Google Drive** | `rclone` + `gvfs-google` | Mounted at `/mnt/gdrive`. Files show up natively in your file manager (Thunar/Dolphin) with cloud-sync icons. |
-| **Calendar** | Waybar `custom/calendar` | A sleek calendar module in the bottom bar that pulls your live Google Calendar events via API and displays them in a Material-styled popup. |
-| **Google Keep** | PWA + Custom CSS | A floating, translucent sidebar widget that allows for quick note-taking, synced with your Pixel. |
+| **Google Drive** | `rclone` + `gvfs-google` | **Agentic Mounting**: Lumina Assistant summarizes recent Drive activity in the file manager sidebar. |
+| **Calendar** | Waybar `custom/calendar` | **Contextual Scheduling**: A module that suggests "Deep Work" times based on Free/Busy blocks. |
+| **Google Keep** | PWA + Custom CSS | **Fluid Notes**: A sliding widget that "listens" to your current project and suggests drafting notes. |
 
 ---
 
-## 2. Google Gemini (The Intelligent Shell)
+## 2. Lumina Assistant (The Agentic Shell)
 
-**Goal**: Transform the AI into an OS-level agent.
+**Goal**: Transform the AI from a chatbot into an Autonomous OS Agent.
 
-- **The "Contextual Portal"**: A `Super + G` shortcut that opens a Gemini overlay.
-- **System Integration**: Using the Gemini API to pass the names of open windows or your current system state to the model.
-  - *Example*: "Gemini, find the email I was just looking at in Chrome and summarize it here."
-- **Terminal Integration**: `gemini-cli` wrapper that helps you debug Arch commands when you get an error.
+- **The "Contextual Portal"**: A `Super + G` shortcut that opens an immersive overlay.
+- **Agentic Workflows**: Lumina Assistant doesn't just "talk"; it executes.
+  - *Example*: "Lumina, organize my workspace for the 'Nebula' project." (Assistant opens the local repo, positions windows, and starts the dev server).
+- **Mission Control**: The Assistant acts as a filter for notifications and distractions based on your **Active Mission**.
 
 ---
 
