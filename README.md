@@ -41,10 +41,10 @@ Lumina OS is built on the shoulders of giants. We apply:
 
 - **Zero to One**: Creating a 10x shift in workstation recovery and longevity.
 - **Jobs to be Done**: Focusing on the human outcomes of focus and autonomy.
-- **The Science of Focus**: Treating **Attention** as a finite system resource (See [PRODUCTIVITY_ENGINE.md](file:///home/johncarlojose/Projects/luminaOS/PRODUCTIVITY_ENGINE.md)).
+- **The Science of Focus**: Treating **Attention** as a finite system resource (See [PRODUCTIVITY_ENGINE.md](PRODUCTIVITY_ENGINE.md)).
 - **Conceptual Integrity**: A unified system directed by a single Rust-core orchestrator.
 
-Explore our full [Product Wisdom Library](file:///home/johncarlojose/Projects/luminaOS/PRODUCT_WISDOM.md).
+Explore our full [Product Wisdom Library](PRODUCT_WISDOM.md).
 
 ---
 
@@ -75,38 +75,38 @@ The Lumina OS vision is codified across these core documents:
 
 ### 💡 Core Vision & Strategy
 
-- **[MANIFESTO.md](file:///home/johncarlojose/Projects/luminaOS/MANIFESTO.md)**: Our beliefs and binary DNA.
-- **[STRATEGY.md](file:///home/johncarlojose/Projects/luminaOS/STRATEGY.md)**: Market position, target audience, and R&D logic.
-- **[COMPETITIVE_LANDSCAPE.md](file:///home/johncarlojose/Projects/luminaOS/COMPETITIVE_LANDSCAPE.md)**: A head-to-head analysis against macOS and CachyOS.
-- **[PRODUCTIVITY_ENGINE.md](file:///home/johncarlojose/Projects/luminaOS/PRODUCTIVITY_ENGINE.md)**: The science of "Zero-Drag" focus and flow.
-- **[FUTURE_TRENDS_2030.md](file:///home/johncarlojose/Projects/luminaOS/FUTURE_TRENDS_2030.md)**: Foresight into the evolution of modularity and AI orchestration.
-- **[WHY_LUMINA.md](file:///home/johncarlojose/Projects/luminaOS/WHY_LUMINA.md)**: The human motivations (Focus, Autonomy, Longevity).
-- **[PRODUCT_WISDOM.md](file:///home/johncarlojose/Projects/luminaOS/PRODUCT_WISDOM.md)**: Industry-leading frameworks (Zero to One, JTBD) applied to OS design.
+- **[MANIFESTO.md](MANIFESTO.md)**: Our beliefs and binary DNA.
+- **[STRATEGY.md](STRATEGY.md)**: Market position, target audience, and R&D logic.
+- **[COMPETITIVE_LANDSCAPE.md](COMPETITIVE_LANDSCAPE.md)**: A head-to-head analysis against macOS and CachyOS.
+- **[PRODUCTIVITY_ENGINE.md](PRODUCTIVITY_ENGINE.md)**: The science of "Zero-Drag" focus and flow.
+- **[FUTURE_TRENDS_2030.md](FUTURE_TRENDS_2030.md)**: Foresight into the evolution of modularity and AI orchestration.
+- **[WHY_LUMINA.md](WHY_LUMINA.md)**: The human motivations (Focus, Autonomy, Longevity).
+- **[PRODUCT_WISDOM.md](PRODUCT_WISDOM.md)**: Industry-leading frameworks (Zero to One, JTBD) applied to OS design.
 
 ### 📑 Production Planning & Governance
 
-- **[PLANNING/PROJECT_TIMELINE.md](file:///home/johncarlojose/Projects/luminaOS/PLANNING/PROJECT_TIMELINE.md)**: 12-month delivery schedule and milestones (2025).
-- **[PLANNING/PHASE_1_IMPLEMENTATION_CHECKPOINTS.md](file:///home/johncarlojose/Projects/luminaOS/PLANNING/PHASE_1_IMPLEMENTATION_CHECKPOINTS.md)**: Mission-log for Foundations & Bootstrap.
-- **[PLANNING/PHASE_2_IMPLEMENTATION_CHECKPOINTS.md](file:///home/johncarlojose/Projects/luminaOS/PLANNING/PHASE_2_IMPLEMENTATION_CHECKPOINTS.md)**: Mission-log for Intelligence & Isolation.
-- **[PLANNING/PHASE_3_IMPLEMENTATION_CHECKPOINTS.md](file:///home/johncarlojose/Projects/luminaOS/PLANNING/PHASE_3_IMPLEMENTATION_CHECKPOINTS.md)**: Mission-log for the Agentic Shell.
-- **[PLANNING/PHASE_4_IMPLEMENTATION_CHECKPOINTS.md](file:///home/johncarlojose/Projects/luminaOS/PLANNING/PHASE_4_IMPLEMENTATION_CHECKPOINTS.md)**: Mission-log for Hardening & Recovery.
-- **[PLANNING/PHASE_5_IMPLEMENTATION_CHECKPOINTS.md](file:///home/johncarlojose/Projects/luminaOS/PLANNING/PHASE_5_IMPLEMENTATION_CHECKPOINTS.md)**: Mission-log for Autonomy & The Magic ISO.
-- **[.github/AI_AGENT_DIRECTIVES.md](file:///home/johncarlojose/Projects/luminaOS/.github/AI_AGENT_DIRECTIVES.md)**: Mandatory operation manual for AI agents (The "Zero Vagueness" Law).
-- **[PLANNING/SYSTEM_ARCHITECTURE_ADR.md](file:///home/johncarlojose/Projects/luminaOS/PLANNING/SYSTEM_ARCHITECTURE_ADR.md)**: Architectural Decision Records (Why we chose Rust, OCI, etc).
-- **[PLANNING/SECURITY_ARCHITECTURE_ADR.md](file:///home/johncarlojose/Projects/luminaOS/PLANNING/SECURITY_ARCHITECTURE_ADR.md)**: Deep dive into the OS security model and Mission sandboxing.
-- **[PLANNING/PHASE_1_TECHNICAL_SPEC.md](file:///home/johncarlojose/Projects/luminaOS/PLANNING/PHASE_1_TECHNICAL_SPEC.md)**: Detailed technical blueprint for the Rust orchestrator.
-- **[PLANNING/RISK_REGISTER.md](file:///home/johncarlojose/Projects/luminaOS/PLANNING/RISK_REGISTER.md)**: Exhaustive technical and strategic risk management.
-- **[PLANNING/MARKET_IMPACT_STRATEGY.md](file:///home/johncarlojose/Projects/luminaOS/PLANNING/MARKET_IMPACT_STRATEGY.md)**: Strategic vision for global impact and competitive moats.
-- **[PLANNING/DEVELOPER_EXPERIENCE_DX.md](file:///home/johncarlojose/Projects/luminaOS/PLANNING/DEVELOPER_EXPERIENCE_DX.md)**: Standards for contribution and quality.
-- **[CONTRIBUTING.md](file:///home/johncarlojose/Projects/luminaOS/CONTRIBUTING.md)**: How to join the mission.
-- **[ROADMAP.md](file:///home/johncarlojose/Projects/luminaOS/ROADMAP.md)**: Milestone tracking and repository governance.
+- **[PLANNING/PROJECT_TIMELINE.md](PLANNING/PROJECT_TIMELINE.md)**: 12-month delivery schedule and milestones (2025).
+- **[PLANNING/PHASE_1_IMPLEMENTATION_CHECKPOINTS.md](PLANNING/PHASE_1_IMPLEMENTATION_CHECKPOINTS.md)**: Mission-log for Foundations & Bootstrap.
+- **[PLANNING/PHASE_2_IMPLEMENTATION_CHECKPOINTS.md](PLANNING/PHASE_2_IMPLEMENTATION_CHECKPOINTS.md)**: Mission-log for Intelligence & Isolation.
+- **[PLANNING/PHASE_3_IMPLEMENTATION_CHECKPOINTS.md](PLANNING/PHASE_3_IMPLEMENTATION_CHECKPOINTS.md)**: Mission-log for the Agentic Shell.
+- **[PLANNING/PHASE_4_IMPLEMENTATION_CHECKPOINTS.md](PLANNING/PHASE_4_IMPLEMENTATION_CHECKPOINTS.md)**: Mission-log for Hardening & Recovery.
+- **[PLANNING/PHASE_5_IMPLEMENTATION_CHECKPOINTS.md](PLANNING/PHASE_5_IMPLEMENTATION_CHECKPOINTS.md)**: Mission-log for Autonomy & The Magic ISO.
+- **[.github/AI_AGENT_DIRECTIVES.md](.github/AI_AGENT_DIRECTIVES.md)**: Mandatory operation manual for AI agents (The "Zero Vagueness" Law).
+- **[PLANNING/SYSTEM_ARCHITECTURE_ADR.md](PLANNING/SYSTEM_ARCHITECTURE_ADR.md)**: Architectural Decision Records (Why we chose Rust, OCI, etc).
+- **[PLANNING/SECURITY_ARCHITECTURE_ADR.md](PLANNING/SECURITY_ARCHITECTURE_ADR.md)**: Deep dive into the OS security model and Mission sandboxing.
+- **[PLANNING/PHASE_1_TECHNICAL_SPEC.md](PLANNING/PHASE_1_TECHNICAL_SPEC.md)**: Detailed technical blueprint for the Rust orchestrator.
+- **[PLANNING/RISK_REGISTER.md](PLANNING/RISK_REGISTER.md)**: Exhaustive technical and strategic risk management.
+- **[PLANNING/MARKET_IMPACT_STRATEGY.md](PLANNING/MARKET_IMPACT_STRATEGY.md)**: Strategic vision for global impact and competitive moats.
+- **[PLANNING/DEVELOPER_EXPERIENCE_DX.md](PLANNING/DEVELOPER_EXPERIENCE_DX.md)**: Standards for contribution and quality.
+- **[CONTRIBUTING.md](CONTRIBUTING.md)**: How to join the mission.
+- **[ROADMAP.md](ROADMAP.md)**: Milestone tracking and repository governance.
 
 ---
 
 ### 🧭 Navigation
 
-- **[CONCEPT_CHEAT_SHEET.md](file:///home/johncarlojose/Projects/luminaOS/CONCEPT_CHEAT_SHEET.md)**: The "Fog Clearer" (Explain like I'm 5 guide).
-- **[PAIN_POINTS.md](file:///home/johncarlojose/Projects/luminaOS/PAIN_POINTS.md)**: The specific industry frustrations we solve.
+- **[CONCEPT_CHEAT_SHEET.md](CONCEPT_CHEAT_SHEET.md)**: The "Fog Clearer" (Explain like I'm 5 guide).
+- **[PAIN_POINTS.md](PAIN_POINTS.md)**: The specific industry frustrations we solve.
 
 ---
 

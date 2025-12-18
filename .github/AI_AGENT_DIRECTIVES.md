@@ -46,3 +46,12 @@ Before making any edit, the agent MUST:
 - `/lumina-core`: Core logic (Filesystem, Registry, Hardware detection).
 - `/PLANNING`: All Strategic Library docs and Mission Logs.
 - `/config`: Pre-baked Hyprland/Waybar modules for the "Staging" demo.
+
+---
+
+## 6. Technical Standards (The "Prescriptive" Layer)
+- **Error Handling**: Use `anyhow::Result` for CLI-level errors. Provide "Contextual Narratives" (e.g., `.with_context(|| "Failed to parse registry at path...")`).
+- **Path Handling**: ALWAYS use `camino::Utf8PathBuf` instead of standard `PathBuf` to ensure UTF-8 safety and avoid panics.
+- **Serialization**: Use `serde` with `rename_all = "camelCase"` or `snake_case` explicitly defined in the struct to prevent registry drift.
+- **Logging**: Use the `tracing` crate. All hardware-aware logic must include `trace!` and `debug!` spans for remote auditing.
+- **Testing**: Every new logic function in `lumina-core` must have a corresponding test in the `tests/` directory or a doc-test.

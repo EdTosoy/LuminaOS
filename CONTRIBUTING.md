@@ -4,7 +4,7 @@ Thank you for your interest in contributing to Lumina OS! We are building a "Cor
 
 ## Our Mission
 
-Before contributing, please read the [MANIFESTO.md](file:///home/johncarlojose/Projects/luminaOS/MANIFESTO.md). Every line of code should move us closer to a "Zero-Drag" workstation experience.
+Before contributing, please read the [MANIFESTO.md](MANIFESTO.md). Every line of code should move us closer to a "Zero-Drag" workstation experience.
 
 ## The Lumina-Flow Workflow
 
