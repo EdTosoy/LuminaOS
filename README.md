@@ -91,6 +91,7 @@ The Lumina OS vision is codified across these core documents:
 - **[PLANNING/PHASE_3_IMPLEMENTATION_CHECKPOINTS.md](file:///home/johncarlojose/Projects/luminaOS/PLANNING/PHASE_3_IMPLEMENTATION_CHECKPOINTS.md)**: Mission-log for the Agentic Shell.
 - **[PLANNING/PHASE_4_IMPLEMENTATION_CHECKPOINTS.md](file:///home/johncarlojose/Projects/luminaOS/PLANNING/PHASE_4_IMPLEMENTATION_CHECKPOINTS.md)**: Mission-log for Hardening & Recovery.
 - **[PLANNING/PHASE_5_IMPLEMENTATION_CHECKPOINTS.md](file:///home/johncarlojose/Projects/luminaOS/PLANNING/PHASE_5_IMPLEMENTATION_CHECKPOINTS.md)**: Mission-log for Autonomy & The Magic ISO.
+- **[.github/AI_AGENT_DIRECTIVES.md](file:///home/johncarlojose/Projects/luminaOS/.github/AI_AGENT_DIRECTIVES.md)**: Mandatory operation manual for AI agents (The "Zero Vagueness" Law).
 - **[PLANNING/SYSTEM_ARCHITECTURE_ADR.md](file:///home/johncarlojose/Projects/luminaOS/PLANNING/SYSTEM_ARCHITECTURE_ADR.md)**: Architectural Decision Records (Why we chose Rust, OCI, etc).
 - **[PLANNING/SECURITY_ARCHITECTURE_ADR.md](file:///home/johncarlojose/Projects/luminaOS/PLANNING/SECURITY_ARCHITECTURE_ADR.md)**: Deep dive into the OS security model and Mission sandboxing.
 - **[PLANNING/PHASE_1_TECHNICAL_SPEC.md](file:///home/johncarlojose/Projects/luminaOS/PLANNING/PHASE_1_TECHNICAL_SPEC.md)**: Detailed technical blueprint for the Rust orchestrator.
