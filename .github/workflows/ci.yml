@@ -1,0 +1,17 @@
+name: Lumina OS CI
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop ]
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Lint Markdown
+      uses: davidanson/markdownlint-cli2-action@v9
+      with:
+        globs: "**/*.md"
