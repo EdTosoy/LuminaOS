@@ -83,13 +83,15 @@ The Lumina OS vision is codified across these core documents:
 - **[WHY_LUMINA.md](file:///home/johncarlojose/Projects/luminaOS/WHY_LUMINA.md)**: The human motivations (Focus, Autonomy, Longevity).
 - **[PRODUCT_WISDOM.md](file:///home/johncarlojose/Projects/luminaOS/PRODUCT_WISDOM.md)**: Industry-leading frameworks (Zero to One, JTBD) applied to OS design.
 
-### 🛠 Technical & Design
+### 📑 Production Planning & Governance
 
-- **[TECHNICAL_SOLUTIONS.md](file:///home/johncarlojose/Projects/luminaOS/TECHNICAL_SOLUTIONS.md)**: Architecture of the `lumina` binary and the Stateless Core.
-- **[MAINTENANCE_ARCHITECTURE.md](file:///home/johncarlojose/Projects/luminaOS/MAINTENANCE_ARCHITECTURE.md)**: How we solve "Arch Anxiety" via curated repos and atomic rollbacks.
-- **[UI_UX_SPEC.md](file:///home/johncarlojose/Projects/luminaOS/UI_UX_SPEC.md)**: Design system and Material You kinetix.
-- **[INTEGRATION_BLUEPRINT.md](file:///home/johncarlojose/Projects/luminaOS/INTEGRATION_BLUEPRINT.md)**: The Pixel Ecosystem and Google Service integration.
-- **[ROADMAP.md](file:///home/johncarlojose/Projects/luminaOS/ROADMAP.md)**: The step-by-step path to MVP and beyond.
+- **[PLANNING/SYSTEM_ARCHITECTURE_ADR.md](file:///home/johncarlojose/Projects/luminaOS/PLANNING/SYSTEM_ARCHITECTURE_ADR.md)**: Architectural Decision Records (Why we chose Rust, OCI, etc).
+- **[PLANNING/RISK_REGISTER.md](file:///home/johncarlojose/Projects/luminaOS/PLANNING/RISK_REGISTER.md)**: Technical and market risk management.
+- **[PLANNING/DEVELOPER_EXPERIENCE_DX.md](file:///home/johncarlojose/Projects/luminaOS/PLANNING/DEVELOPER_EXPERIENCE_DX.md)**: Standards for contribution and quality.
+- **[CONTRIBUTING.md](file:///home/johncarlojose/Projects/luminaOS/CONTRIBUTING.md)**: How to join the mission.
+- **[ROADMAP.md](file:///home/johncarlojose/Projects/luminaOS/ROADMAP.md)**: Milestone tracking and repository governance.
+
+---
 
 ### 🧭 Navigation
 
