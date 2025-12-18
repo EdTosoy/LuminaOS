@@ -29,13 +29,15 @@ To truly compete with a "Pixel for Arch," Google products shouldn't just be tabs
 
 ---
 
-## 3. Communication & Phone (Ecosystem Hub)
+## 3. The "Pixel Hub": Ecosystem Synergy
 
-**Goal**: Make the desktop an extension of your Google Pixel.
+Lumina OS treats your Google Pixel as a native extension of the hardware.
 
-- **Google Messages**: Integrated via the "Pixel Hub" using `scrcpy` (for the actual app) or a dedicated PWA.
-- **Pixel Camera**: A utility that lets you toggle your Pixel's front/back camera as your primary Linux webcam with one click.
-- **Google Photos**: A "Live Tile" widget in the dash that rotates through your recent Google Photos, synced via API.
+- **The Hub**: A system tray widget showing battery, signal, and hot-toggles (Hotspot/DND).
+- **Communication Mirroring**: Native delivery of Pixel notifications with direct-reply capabilities.
+- **LuminaCast**: High-speed ADB/scrcpy app mirroring, behaving like native Linux windows.
+- **Hardware Link**: Shared clipboard and the ability to use the Pixel camera as a high-end webcam.
+- **Auto-Pairing**: One-click setup for KDE Connect and `scrcpy` specific to Lumina OS aesthetics.
 
 ---
 

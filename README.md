@@ -66,11 +66,30 @@ Explore our full [Product Wisdom Library](file:///home/johncarlojose/Projects/lu
 
 ---
 
-## 🗺 Roadmap
+---
 
-- [ ] **Phase 1 (Visuals)**: Official Lumina Shell release with dynamic color kinetics.
-- [ ] **Phase 2 (Connectivity)**: Deep Pixel Hub & Framework integration layer.
-- [ ] **Phase 3 (Intelligence)**: Lumina Assistant System-Aware AI Integration.
+## 📚 Project Documentation
+
+The Lumina OS vision is codified across these core documents:
+
+### 💡 Core Vision & Strategy
+
+- **[MANIFESTO.md](file:///home/johncarlojose/Projects/luminaOS/MANIFESTO.md)**: Our beliefs and binary DNA.
+- **[STRATEGY.md](file:///home/johncarlojose/Projects/luminaOS/STRATEGY.md)**: Market position, target audience, and R&D logic.
+- **[WHY_LUMINA.md](file:///home/johncarlojose/Projects/luminaOS/WHY_LUMINA.md)**: The human motivations (Focus, Autonomy, Longevity).
+- **[PRODUCT_WISDOM.md](file:///home/johncarlojose/Projects/luminaOS/PRODUCT_WISDOM.md)**: Industry-leading frameworks (Zero to One, JTBD) applied to OS design.
+
+### 🛠 Technical & Design
+
+- **[TECHNICAL_SOLUTIONS.md](file:///home/johncarlojose/Projects/luminaOS/TECHNICAL_SOLUTIONS.md)**: Architecture of the `lumina` binary and the Stateless Core.
+- **[UI_UX_SPEC.md](file:///home/johncarlojose/Projects/luminaOS/UI_UX_SPEC.md)**: Design system and Material You kinetix.
+- **[INTEGRATION_BLUEPRINT.md](file:///home/johncarlojose/Projects/luminaOS/INTEGRATION_BLUEPRINT.md)**: The Pixel Ecosystem and Google Service integration.
+- **[ROADMAP.md](file:///home/johncarlojose/Projects/luminaOS/ROADMAP.md)**: The step-by-step path to MVP and beyond.
+
+### 🧭 Navigation
+
+- **[CONCEPT_CHEAT_SHEET.md](file:///home/johncarlojose/Projects/luminaOS/CONCEPT_CHEAT_SHEET.md)**: The "Fog Clearer" (Explain like I'm 5 guide).
+- **[PAIN_POINTS.md](file:///home/johncarlojose/Projects/luminaOS/PAIN_POINTS.md)**: The specific industry frustrations we solve.
 
 ---
 

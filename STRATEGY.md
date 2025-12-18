@@ -16,7 +16,17 @@ In the future, mainstream users will demand:
 
 ---
 
-## 2. The Three Pillars of "Workstation Dominance"
+## 2. The Target: The "Open Professional"
+
+Lumina OS is specifically designed for:
+
+- **The Apple Refugee**: Power users frustrated by "Walled Gardens" but addicted to UI polish.
+- **The Efficiency Engineer**: Senior developers tired of "Linux Jank" who want a zero-drag environment.
+- **The Modular Enthusiast**: Hardware hobbyists who celebrate repairability and transparency.
+
+---
+
+## 3. The Three Pillars of "Workstation Dominance"
 
 ### I. Architectural Aesthetics (Google Design x Desktop)
 
@@ -48,17 +58,22 @@ We apply the core philosophies of the industry's most successful next-gen tools:
 
 ---
 
-## 4. The "Anti-Obsolescence" Edge
+## 5. Competitive Edge: Beating CachyOS
 
-If we want to solve a global problem, we solve **E-Waste**.
-
-- **Silicon-Native**: We compile the desktop shell specifically for the CPU generation (v3/v4) found in Framework laptops.
-- **The "Core-First" Logic**: We prioritize system stability over flashy AI. We build a rock-solid, reproducible core before layering agentic automation.
-- **Zero-Bloat Foundation**: By avoiding the "Electron-everywhere" trap, we preserve RAM and CPU cycles for the user's *actual* work.
+| Feature | CachyOS | **Lumina OS** |
+| :--- | :--- | :--- |
+| **Philosophy** | Speed at all costs. | **Speed with Soul (UX).** |
+| **Pillars** | Functional Performance. | **Longevity & Flow.** |
+| **Ecosystem** | Standard Linux. | **Deep Pixel/Google Synergy.** |
+| **UI** | Traditional/Minimal. | **Reactive/Material You.** |
 
 ---
 
-## 4. Feature Projections
+## 6. The "Mainstream" Path
+
+1. **Social Viralness**: Using Material You "Rice" to gain traction (r/unixporn).
+2. **Performance Proof**: Matching CachyOS benchmarks in silicon-native (v3) tests.
+3. **Retention Loop**: Deep Pixel/Cloud integration creates a high switching cost.
 
 ### Phase A: Hardware Optimization & Ownership
 

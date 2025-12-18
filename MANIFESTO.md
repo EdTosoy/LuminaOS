@@ -4,6 +4,10 @@
 
 **Lumina OS** is the definitive professional operating system for the era of modular hardware and autonomous intelligence. We are building the "Anti-Apple" experience—a system that gives you the polish of a high-end product with the absolute freedom and speed of Arch Linux.
 
+### Our North Star
+
+**"To build a living workstation that respects hardware longevity, protects user focus, and masters technical autonomy."**
+
 ---
 
 ## 1. The Core Principles
@@ -32,6 +36,10 @@ We believe in the "Open Professional."
 
 - **Modular by Choice**: Designed specifically to showcase the power of modular hardware (Framework).
 - **Verifiable Security**: High-end protection (AppArmor/UFW) that is transparent, auditable, and controlled by the human, not the corporation.
+- **The "Google Soul" Pillars**:
+  - **Pixel Logic**: Personal over Uniform. Form follows feeling.
+  - **Gemini Logic**: Universal Intelligence. The OS as a collaborative brain.
+  - **Cloud Logic**: Scaling Freedom. Desktop-as-Code.
 
 ---
 
