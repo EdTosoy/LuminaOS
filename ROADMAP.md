@@ -58,4 +58,4 @@ To maintain production-grade quality, the project follows a tiered branching mod
 
 ### Community & Contribution
 
-We welcome contributions that respect our pillars. See [CONTRIBUTING.md](file:///home/johncarlojose/Projects/luminaOS/CONTRIBUTING.md) for details on how to join the mission.
+We welcome contributions that respect our pillars. See [CONTRIBUTING.md](CONTRIBUTING.md) for details on how to join the mission.

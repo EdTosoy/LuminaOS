@@ -8,7 +8,7 @@ This document provides absolute-clarity directives for AI agents. **Do not devia
 
 *Goal: Establish a production-ready, multi-arch Rust workspace.*
 
-### [ ] Checkpoint 1.1: Cargo Workspace Scaffold
+### [x] Checkpoint 1.1: Cargo Workspace Scaffold
 
 - **Task**: Initialize a Rust workspace to separate the CLI frontend from the logic backend.
 - **Directives**:

@@ -10,7 +10,7 @@ Link to the relevant issue (e.g., Closes #123).
 
 ## Alignment Check
 
-- [ ] Does this align with the [MANIFESTO](file:///home/johncarlojose/Projects/luminaOS/MANIFESTO.md)?
+- [ ] Does this align with the [MANIFESTO](MANIFESTO.md)?
 - [ ] Have you updated the documentation in the core library?
 - [ ] Does this maintain the "Zero-Drag" performance goal?
 

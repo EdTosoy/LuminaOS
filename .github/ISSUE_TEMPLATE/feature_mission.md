@@ -11,7 +11,7 @@ assignees: ''
 Is your feature request related to a problem? Please describe. (e.g., I'm frustrated when [...])
 
 **Describe the Solution**
-A clear and concise description of what you want to happen. How does this align with the [MANIFESTO](file:///home/johncarlojose/Projects/luminaOS/MANIFESTO.md)?
+A clear and concise description of what you want to happen. How does this align with the [MANIFESTO](MANIFESTO.md)?
 
 **Describe alternatives you've considered**
 A clear and concise description of any alternative solutions or features you've considered.
