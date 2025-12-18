@@ -25,24 +25,20 @@ This document details the technical implementation of our two most ambitious "Fr
 
 ---
 
-## 2. Solving "Environment Drift" with Mission-Aware Workspaces
+## 2. Solving "Environment Drift" with Contextual Flow
 
-**The Goal**: Eliminating the gap between your workstation state and your active project.
+**The Goal**: Zero-friction transitions between projects. The OS follows your lead, it doesn't wait for a command.
 
-### Technical Architecture (Mission-Aware)
+### Technical Architecture (Contextual)
 
-1. **The "Mission" Concept**:
-    * A "Mission" is a workspace tied to a specific project directory (e.g., `~/Projects/nebula`).
-    * Lumina OS uses an OS-level file watcher (using `inotify` via Rust) that detects when you enter a "Mission" directory in the terminal or file manager.
+1. **The "Flow" Trigger**:
+    * No "Mission Center" to manage. Lumina OS simply watches your `cwd` (Current Working Directory).
+    * If you `cd` into a directory with a `.git` or `package.json`, the OS silently activates that "Flow."
 
-2. **Proactive State Switching**:
-    * When you enter a Mission, the OS automatically executes:
-        * **Shell Context**: Loads specific environment variables and aliases (direnv-style, but integrated into the shell prompt).
-        * **UI Context**: Adjusts Waybar modules to show project-specific data (e.g., GitHub PR status, local server logs).
-        * **Layout Context**: Autonomously tiles your windows according to that specific Mission's requirements (e.g., VS Code on the left, Terminal on the right).
-
-3. **Lumina Assistant Integration**:
-    * The Assistant is "Mission-Aware." If you ask, "What was I working on?" it summarizes the specific git diffs and open issues for the *current Mission*, not your entire system.
+2. **Invisible Orchestration**:
+    * **Auto-Layout**: If it's your first time in the project, it tiles windows normally. If it's your 10th time, it restores your preferred window positions for *that specific project*.
+    * **Smart Silencing**: Notifications are filtered by *relevance* to the project. If you're in a Rust project, GitHub notifications pass through; Instagram does not.
+    * **Implicit Environment**: Variables are loaded via a lightweight Rust-based `env-watcher` that is faster and more stable than traditional shell hooks.
 
 ---
 

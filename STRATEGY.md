@@ -43,17 +43,19 @@ We apply the core philosophies of the industry's most successful next-gen tools:
 
 - **Ownership** (Shadcn style): You "pull" the OS source; you don't just "install" a package.
 - **Reactivity** (Convex style): The shell is a real-time reactive environment.
-- **Immersion** (Cursor style): Lumina Assistant is baked into every workspace.
+- **Invisible Context**: No manual "modes." The OS senses your work (via Git/Dir context) and adapts.
 - **Consolidation** (Bun style): A single, fast `lumina` binary for all system logic.
+- **The Longevity Engine**: Software designed to make 5-year-old modular hardware feel faster than new "soldered" machines through silicon-native optimization (`v3/v4`).
 
 ---
 
-## 3. The "CachyOS" Competitive Edge
+## 4. The "Anti-Obsolescence" Edge
 
-If we want to be mainstream, we must be faster than the fast.
+If we want to solve a global problem, we solve **E-Waste**.
 
 - **Silicon-Native**: We compile the desktop shell specifically for the CPU generation (v3/v4) found in Framework laptops.
 - **The "Fluid" Scheduler**: Using Google's R&D in thread management to ensure the UI stays at 120Hz/144Hz even during heavy compiles or gaming.
+- **Zero-Bloat Foundation**: By avoiding the "Electron-everywhere" trap of modern OSs, we preserve RAM and CPU cycles for the user's *actual* work.
 
 ---
 

@@ -10,7 +10,7 @@
 
 - [x] **Material You Engine**: Integration of `matugen` into Hyprland and Waybar.
 - [ ] **Lumina CLI (v0.1)**: Initial Rust tool for theme management and **Stateless Profile** syncing.
-- [ ] **Lumina-Stateless**: Implementing the `~/.lumina` unified root and shadow-linker.
+- [ ] **Longevity Engine (v0.1)**: Benchmarking and silicon-native (v3/v4) system optimizations.
 - [ ] **Lumina-Shelf**: A custom Waybar configuration that mimics the ChromeOS bottom bar (Pill-shaped modules).
 - [ ] **Palette Daemon**: A background service that watches the wallpaper and updates terminal/browser colors in real-time.
 
@@ -31,7 +31,7 @@
 *Focus: Agentic features and system-aware AI.*
 
 - [ ] **Lumina Assistant**: A sidebar (replacing the current LLM setup) that has read-access to system logs, file structures, and active workspaces.
-- [ ] **Mission-Aware Workspaces**: OS-level state switching based on your current project directory.
+- [ ] **Contextual Flow**: Automatic environment and notification switching based on project directory.
 - [ ] **Reactive Event Bus**: Native OS notification system for real-time widget updates (Convex-style).
 - [ ] **Contextual Commands**: "Lumina Assistant, summarize the PDF I just downloaded to Downloads."
 - [ ] **Lumina Search**: A global search that indices both local files and Google workspace data.
