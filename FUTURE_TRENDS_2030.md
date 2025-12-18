@@ -15,12 +15,12 @@ To build a great product, we must not only solve today's pains but also skate to
 
 ---
 
-### 2. From "LLM as a Feature" to "Agentic Orchestration"
+### 2. From "LLM as a Feature" to "Intelligent Orchestration"
 
 **The Trend**: Currently, AI is a chatbot. In 2030, the AI *is* the operating system.
 
-- **Future State**: Users won't manage "apps." They will manage "Objectives." They won't say "Open Chrome"; they will say "Prepare the market report," and the OS will orchestrate the data fetching, drafting, and layout.
-- **Lumina's Move**: Our **Lumina Assistant** isn't a popup; it's a **State Observer**. It doesn't wait for a prompt; it observes the mission and proactively clears the path.
+- **Future State**: Users won't manage "apps." They will manage "Objectives." They won't say "Open Chrome"; they will say "Prepare the market report," and the OS will coordinate the data fetching, drafting, and layout.
+- **Lumina's Move**: Our **Lumina Observer** isn't a popup; it's a **State Observer**. It doesn't wait for a prompt; it observes the mission and proactively clears the path for the user.
 
 ---
 
@@ -59,5 +59,7 @@ To build a great product, we must not only solve today's pains but also skate to
 | "Ask the AI a question." | **"Delegate the objective to the Shell."** |
 | "Search for my files." | **"The Context finds me."** |
 | "Log into the cloud." | **"Sync my Stateless Soul."** |
+
+### Conclusion: The Antidote to the "Disposable Era"
 
 **Lumina OS isn't just a Linux distro; it's the antidote to the "Disposable Era."**

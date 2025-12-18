@@ -28,11 +28,11 @@ Think of it like **iCloud for your terminal**, but you own the data.
 
 ### 3. What is "Contextual Flow"?
 
-It’s **Automatic Workspace Setup**.
+It’s **Automatic Mission Orchestration**.
 
-- When you open a project folder, the OS "senses" it.
-- It automatically silences Slack, opens your browser to the project URL, and tiles your editor.
-- **No manual modes**: It just happens when you start working.
+- When you enter a project folder, the OS "senses" it.
+- **Containerized Missions**: It optionally attaches a pre-configured Docker/Podman container for that specific project, ensuring your development tools (Rust, Go, Node) are always 100% reproducible.
+- **Zero Drift**: It tiles your windows and silences notifications based on your *mission*, not just your folder.
 
 ---
 
@@ -63,7 +63,7 @@ Yes. We use **Lumina-Stable** curated repos that lag behind Arch upstream by 2 d
 
 ### 7. How fast is the setup?
 
-The **Life-Cycle Installer** detects your Framework hardware and sets everything up in 5 minutes. You log in to Google, and your workstation is ready to go.
+The **Native Bootstrap** model gets you running in minutes. You install a vanilla Arch base, run one command (`lumina init`), and the system auto-tunes itself to your Framework hardware and Google Pixel profile instantly.
 
 ---
 

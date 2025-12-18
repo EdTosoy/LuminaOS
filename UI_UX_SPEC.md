@@ -57,8 +57,8 @@ The core of the experience is that the OS "feels" the wallpaper.
 ## 4. Projections: Interaction Design
 
 - **Gestures**: 3-finger swipe up for Workspace Overview (mimicking Android's multitasker).
-- **Lumina Assistant**: `Super + Space` opens a centralized, Material-styled search bar that serves as an App Launcher, Calculator, and **Agent Portal**.
-- **AI Immersion**: The Assistant "ghosts" through the system—it monitors terminal errors, summarizes folder contents in the file manager, and provides "Code-Action" suggestions in real-time.
+- **Lumina Observer**: `Super + Space` opens a centralized, Material-styled search bar that serves as an App Launcher, Calculator, and **Mission HUD**.
+- **Contextual Assistance**: The Observer "ghosts" through the system—it monitors terminal errors, summarizes folder contents, and providing Mission-Aware shortcuts in real-time.
 
 ---
 

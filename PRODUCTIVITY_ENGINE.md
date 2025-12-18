@@ -28,13 +28,14 @@ Productivity isn't about working more hours; it's about **reducing the distance 
 
 ---
 
-### 3. The "Lumina-Command" (Unified Action)
+### 3. The "Lumina Mission" (Unified Action)
 
 **The Problem**: Hunting through menus or terminal history to find the right command.
-**The Lumina Solution**: **Natural Language Orchestration**.
+**The Lumina Solution**: **Containerized Orchestration**.
 
-- Instead of finding an app, you speak to the **Lumina Assistant**: "Prepare for Nebula deployment."
-- The OS doesn't just open a browser; it starts the Docker container, opens the deployment log, and positions your staging URL side-by-side.
+- Instead of just opening an app, you initialize a **Mission**.
+- The `lumina` binary spins up a **Docker/Podman** environment with your exact toolchain (Rust, Node, etc.), ensuring you never lose time to "Dependency Drift."
+- **Observer HUD**: The sidebar surfaces the relevant documentation and deployment logs for that specific mission automatically.
 
 ---
 

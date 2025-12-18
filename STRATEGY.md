@@ -30,10 +30,10 @@ Lumina OS is specifically designed for:
 
 ### I. Architectural Aesthetics (Google Design x Desktop)
 
-We take the **Material You** kinetix and **Lumina AI** sophistication, but apply it to **Desktop-First** layouts.
+We take the **Material You** kinetix and **Lumina Metadata** sophistication, but apply it to **Desktop-First** layouts.
 
 - **No Mobile-Centric Panels**: The UI should feel like architectural blueprints—structured, clean, and utilizing large screens.
-- **Dynamic Workspaces**: Not just for apps, but for "Modular Tasks." One workspace for Code, one for Media, one for System Tuning.
+- **Mission-Aware Workspaces**: Not just for apps, but for "Containerized Missions." One workspace for Code (with attached Docker env), one for Media, one for System Tuning.
 
 ### II. Hardware Synergy (The Framework Hook)
 
@@ -92,9 +92,10 @@ To turn Lumina OS into a movement, we empower the creators:
 - [ ] **The Lumina CLI**: A Rust-based unified tool for theme, sync, and install management.
 - [ ] **Codebase Distribution**: Making the shell widgets editable source code (Shadcn-style).
 
-### Phase B: The "Lumina" Orchestrator & Reactivity
+### Phase B: The "Lumina" Observer & Containerization
 
-- [ ] An AI agent (Lumina Assistant / Gemini based) that helps you manage **Desktop Workflows**, not just phone tasks.
+- [ ] **Lumina Observer**: A context-aware overlay that surfaces documentation and project metadata (Non-autonomous).
+- [ ] **Containerized Missions**: Integration of Podman/Docker as the primary development "Safe Room."
 - [ ] **Reactive Event Bus**: Real-time system state updates for the entire shell.
 
 ### Phase C: The "Lumina" Ecosystem & Modularity

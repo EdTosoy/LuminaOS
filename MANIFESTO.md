@@ -2,11 +2,11 @@
 
 ## Lightness. Intelligence. Openness
 
-**Lumina OS** is the definitive professional operating system for the era of modular hardware and autonomous intelligence. We are building the "Anti-Apple" experience—a system that gives you the polish of a high-end product with the absolute freedom and speed of Arch Linux.
+**Lumina OS** is the definitive professional operating system for the era of modular hardware and system-aware intelligence. We are building the "Anti-Apple" experience—a system that gives you the polish of a high-end product with the absolute freedom and speed of Arch Linux.
 
 ### Our North Star
 
-**"To build a living workstation that respects hardware longevity, protects user focus, and masters technical autonomy."**
+**To build a living workstation that respects hardware longevity, protects user focus, and masters technical sovereignty.**
 
 ---
 
@@ -25,7 +25,7 @@ Technology should never feel like a burden.
 
 Lumina OS isn't just a box for apps; it's a collaborative environment.
 
-- **Proactive Agency**: The system anticipates your needs—managing your workspaces and information through integrated AI.
+- **Mission Orchestration**: The system anticipates your needs—managing your workspaces and information through context-aware observation.
 - **Cognitive Sovereignty**: The right to deep work. The OS acts as a shield against the noise of the digital swarm.
 - **Reactive Life**: The OS responds instantly to changes in your hardware, your cloud, and your environment without manual polling.
 - **Contextual Flow**: The OS understands what you're working on and adapts its UI to help you focus.

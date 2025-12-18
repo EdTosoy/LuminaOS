@@ -12,7 +12,7 @@ Lumina OS is the "Anti-Apple" workstation. We believe professional computing bel
 
 - **Beat the Benchmarks**: Optimized with `x86-64-v3` binaries and custom BORE kernels to exceed the performance of CachyOS.
 - **The Google Soul**: Featuring a generative **Material You** kinetix that adapts your entire system palette to your mood and focus.
-- **Agentic Core**: Not just a desktop, but a hub for **Autonomous AI Agents** (Lumina Assistant) that manage your complex workflows.
+- **Agentic Core**: Not just a desktop, but a hub for **Intelligent Orchestration** (Lumina Observer) that manages your complex missions.
 
 ---
 
@@ -30,7 +30,7 @@ Lumina OS is built for builders. It is specifically designed for:
 
 - **Arch Anxiety**: Eliminating the maintenance burden of rolling-release systems.
 - **Walled Gardens**: Providing the polish of premium ecosystems without the hardware lock-in.
-- **Context Overload**: Reducing cognitive load through agentic, system-aware AI.
+- **Context Overload**: Reducing cognitive load through mission-aware, system-aware observation.
 - **Config Debt**: Shifting from "Configuration" to "Code Ownership" (Shadcn-style).
 
 ---

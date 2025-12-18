@@ -12,20 +12,20 @@ To truly compete with a "Pixel for Arch," Google products shouldn't just be tabs
 
 | Product | Integration Method | The "Lumina OS" Experience |
 | :--- | :--- | :--- |
-| **Google Drive** | `rclone` + `gvfs-google` | **Agentic Mounting**: Lumina Assistant summarizes recent Drive activity in the file manager sidebar. |
+| **Google Drive** | `rclone` + `gvfs-google` | **Mission-Aware Mounting**: The Lumina Observer summarizes recent Drive activity in the file manager sidebar based on your project. |
 | **Calendar** | Waybar `custom/calendar` | **Contextual Scheduling**: A module that suggests "Deep Work" times based on Free/Busy blocks. |
 | **Google Keep** | PWA + Custom CSS | **Fluid Notes**: A sliding widget that "listens" to your current project and suggests drafting notes. |
 
 ---
 
-## 2. Lumina Assistant (The Agentic Shell)
+## 2. Lumina Observer (The Mission HUD)
 
-**Goal**: Transform the AI from a chatbot into an Autonomous OS Agent.
+**Goal**: Transform the AI from a chatbot into an Intelligent OS Observer.
 
 - **The "Contextual Portal"**: A `Super + G` shortcut that opens an immersive overlay.
-- **Agentic Workflows**: Lumina Assistant doesn't just "talk"; it executes.
-  - *Example*: "Lumina, organize my workspace for the 'Nebula' project." (Assistant opens the local repo, positions windows, and starts the dev server).
-- **Mission Control**: The Assistant acts as a filter for notifications and distractions based on your **Active Mission**.
+- **Mission Orchestration**: The Lumina Observer doesn't just "talk"; it assists in setup.
+  - *Example*: "Initialize the 'Nebula' workspace." (Observer opens the local repo, prepares the Docker container, and positions windows).
+- **Mission Control**: The Observer acts as a filter for notifications and distractions based on your **Active Mission**.
 
 ---
 

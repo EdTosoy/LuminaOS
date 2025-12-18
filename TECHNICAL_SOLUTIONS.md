@@ -32,23 +32,31 @@ The binary orchestrates system changes with a focus on **Upstream Safety**.
 
 ---
 
+---
+
 ## 2. Solving "The First 5 Minutes" (The Entrance)
 
-A professional workstation shouldn't have a "leaky" setup experience.
+Instead of a high-risk "Auto-tuned ISO," we follow a **Native Bootstrap** model.
 
-- **The Life-Cycle Installer (Agentic ISO)**: The installer detects your Framework hardware modules and auto-tunes the UI (scaling, drivers, fonts) during the live session.
-- **Lumina Welcome Flow**: Post-installation, the **Lumina Assistant** guides the user through linking their Pixel and initializing their first `lumina.yaml` registry.
+- **The Bootstrap Command**: A simple, single-binary execution on a vanilla Arch install. `lumina init` detects your Framework modules and applies the optimized Profile.
+- **Lumina Welcome Flow**: A lightweight GTK/Adwaita-styled wizard that links your Pixel phone and sets up your first `lumina.yaml` registry.
 
-## 2. Solving "Environment Drift" (Contextual Flow)
+## 3. Solving "Dependency Hell" (Containerized Missions)
 
-To avoid "Binary Anxiety" and resource bloat, we use the **Hook Pattern**.
+To mitigate the risk of "Stateless" drift, we utilize **OCI Containers (Podman/Docker)** to create "Clean Room" development environments.
 
-- **The Trigger**: A lightweight shell hook (e.g., in `.zshrc`) that pings the `lumina` binary when you change directories.
-- **The Execution**: `lumina flow --dir <PWD>` checks for project markers (`.git`, `package.json`).
-- **Orchestration**: It tells Hyprland to apply a specific layout and Waybar to toggle modules for that workspace.
-- **Fail-Safe**: If the binary crashes, your environment remains untouched. There is no background "Daemon" that can hang your system.
+- **The Logic**: When you enter a project, the `lumina` binary doesn't just change your shell; it attaches a pre-configured OCI container to your session.
+- **The Moat**: This ensures **100% Reproducibility**. Your project dependencies live in the container, while your shell remains native and fast.
+- **Integration**: The OS shell (Hyprland) remains native, but the **Development State** is containerized and managed by the `lumina.yaml` registry.
 
 ---
+
+## 4. The "Lumina Observer" (The Safety-First Assistant)
+
+We shift away from "Autonomous Agents" toward a **State Observer** model.
+
+- **Read-Only Intelligence**: The Assistant observes logs and errors. It suggests solutions but **never executes system changes** automatically.
+- **Fail-Safe**: By keeping the user as the pilot, we eliminate the security risks of an AI running system-level code-actions.
 
 ## Technical Moat: The `lumina` Rust Binary
 
