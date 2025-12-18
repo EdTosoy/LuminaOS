@@ -55,7 +55,19 @@ Stable, fast, and safe.
 
 ---
 
-### 6. The "Core-First" Vow
+### 6. Is it stable? (The "Arch Anxiety" Cure)
+
+Yes. We use **Lumina-Stable** curated repos that lag behind Arch upstream by 2 days. This ensures that if an update breaks a desktop component, we catch it before it hits your machine. Plus, we take an automatic "System Snapshot" before every update.
+
+---
+
+### 7. How fast is the setup?
+
+The **Life-Cycle Installer** detects your Framework hardware and sets everything up in 5 minutes. You log in to Google, and your workstation is ready to go.
+
+---
+
+### 8. The "Core-First" Vow
 
 We build the **Stable Base** (The Registry and Shell) before we build the **Flashy AI**.
 
