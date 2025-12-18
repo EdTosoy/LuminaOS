@@ -76,6 +76,7 @@ The Lumina OS vision is codified across these core documents:
 
 - **[MANIFESTO.md](file:///home/johncarlojose/Projects/luminaOS/MANIFESTO.md)**: Our beliefs and binary DNA.
 - **[STRATEGY.md](file:///home/johncarlojose/Projects/luminaOS/STRATEGY.md)**: Market position, target audience, and R&D logic.
+- **[FUTURE_TRENDS_2030.md](file:///home/johncarlojose/Projects/luminaOS/FUTURE_TRENDS_2030.md)**: Foresight into the evolution of modularity and AI orchestration.
 - **[WHY_LUMINA.md](file:///home/johncarlojose/Projects/luminaOS/WHY_LUMINA.md)**: The human motivations (Focus, Autonomy, Longevity).
 - **[PRODUCT_WISDOM.md](file:///home/johncarlojose/Projects/luminaOS/PRODUCT_WISDOM.md)**: Industry-leading frameworks (Zero to One, JTBD) applied to OS design.
 
