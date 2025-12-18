@@ -8,15 +8,15 @@ This document tracks the "Why" behind the core technical architecture of Lumina 
 
 **Status**: Accepted | **Date**: 2025-12-18
 
-### Context
+### ADR 001: Context
 
 We need a core orchestrator binary (`lumina`) to manage system state, themes, and phone sync.
 
-### Decision
+### ADR 001: Decision
 
 Use **Rust** for the core system logic.
 
-### Rationale
+### ADR 001: Rationale
 
 - **Memory Safety**: Eliminates entire classes of system crashes common in C/C++.
 - **Blazing Performance**: Critical for maintaining the "Zero-Drag" workstation feel.
@@ -28,15 +28,15 @@ Use **Rust** for the core system logic.
 
 **Status**: Accepted | **Date**: 2025-12-18
 
-### Context
+### ADR 002: Context
 
 Maintaining 100% reproducible development environments ("Statelessness") is traditionally prone to configuration drift.
 
-### Decision
+### ADR 002: Decision
 
 Utilize OCI-compliant containers to isolate project-level toolchains.
 
-### Rationale
+### ADR 002: Rationale
 
 - **Absolute Reproducibility**: If it runs in the container, it runs on every Lumina machine.
 - **System Hygiene**: Prevents "Dependency Hell" from polluting the host Arch Linux base.
@@ -48,15 +48,15 @@ Utilize OCI-compliant containers to isolate project-level toolchains.
 
 **Status**: Accepted | **Date**: 2025-12-18
 
-### Context
+### ADR 003: Context
 
 Vanilla Arch is prone to breaking desktop components during upstream updates.
 
-### Decision
+### ADR 003: Decision
 
 Implement a 24-48 hour delay on package updates via a curated repository tier.
 
-### Rationale
+### ADR 003: Rationale
 
 - **Risk Mitigation**: Catch breaking changes in a testing environment before they reach users.
 - **Reliability**: Provides the "stability of a LTS" with the "speed of a Rolling Release."
