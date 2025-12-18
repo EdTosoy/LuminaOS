@@ -86,9 +86,11 @@ The Lumina OS vision is codified across these core documents:
 ### 📑 Production Planning & Governance
 
 - **[PLANNING/PROJECT_TIMELINE.md](file:///home/johncarlojose/Projects/luminaOS/PLANNING/PROJECT_TIMELINE.md)**: 12-month delivery schedule and milestones (2025).
-- **[PLANNING/PHASE_1_IMPLEMENTATION_CHECKPOINTS.md](file:///home/johncarlojose/Projects/luminaOS/PLANNING/PHASE_1_IMPLEMENTATION_CHECKPOINTS.md)**: Granular mission-log (Foundations).
-- **[PLANNING/PHASE_2_IMPLEMENTATION_CHECKPOINTS.md](file:///home/johncarlojose/Projects/luminaOS/PLANNING/PHASE_2_IMPLEMENTATION_CHECKPOINTS.md)**: Granular mission-log (Intelligence & Isolation).
-- **[PLANNING/PHASE_3_IMPLEMENTATION_CHECKPOINTS.md](file:///home/johncarlojose/Projects/luminaOS/PLANNING/PHASE_3_IMPLEMENTATION_CHECKPOINTS.md)**: Granular mission-log (Agentic Shell & Bazaar).
+- **[PLANNING/PHASE_1_IMPLEMENTATION_CHECKPOINTS.md](file:///home/johncarlojose/Projects/luminaOS/PLANNING/PHASE_1_IMPLEMENTATION_CHECKPOINTS.md)**: Mission-log for Foundations & Bootstrap.
+- **[PLANNING/PHASE_2_IMPLEMENTATION_CHECKPOINTS.md](file:///home/johncarlojose/Projects/luminaOS/PLANNING/PHASE_2_IMPLEMENTATION_CHECKPOINTS.md)**: Mission-log for Intelligence & Isolation.
+- **[PLANNING/PHASE_3_IMPLEMENTATION_CHECKPOINTS.md](file:///home/johncarlojose/Projects/luminaOS/PLANNING/PHASE_3_IMPLEMENTATION_CHECKPOINTS.md)**: Mission-log for the Agentic Shell.
+- **[PLANNING/PHASE_4_IMPLEMENTATION_CHECKPOINTS.md](file:///home/johncarlojose/Projects/luminaOS/PLANNING/PHASE_4_IMPLEMENTATION_CHECKPOINTS.md)**: Mission-log for Hardening & Recovery.
+- **[PLANNING/PHASE_5_IMPLEMENTATION_CHECKPOINTS.md](file:///home/johncarlojose/Projects/luminaOS/PLANNING/PHASE_5_IMPLEMENTATION_CHECKPOINTS.md)**: Mission-log for Autonomy & The Magic ISO.
 - **[PLANNING/SYSTEM_ARCHITECTURE_ADR.md](file:///home/johncarlojose/Projects/luminaOS/PLANNING/SYSTEM_ARCHITECTURE_ADR.md)**: Architectural Decision Records (Why we chose Rust, OCI, etc).
 - **[PLANNING/SECURITY_ARCHITECTURE_ADR.md](file:///home/johncarlojose/Projects/luminaOS/PLANNING/SECURITY_ARCHITECTURE_ADR.md)**: Deep dive into the OS security model and Mission sandboxing.
 - **[PLANNING/PHASE_1_TECHNICAL_SPEC.md](file:///home/johncarlojose/Projects/luminaOS/PLANNING/PHASE_1_TECHNICAL_SPEC.md)**: Detailed technical blueprint for the Rust orchestrator.

@@ -52,3 +52,16 @@ This document provides granular directives for Phase 2: **The "Observer" Hub**.
 - [ ] **Checkpoint 3.3: Notification Shadowing**
   - Suppress non-priority notifications while a "Deep Work" mission is active.
   - **Success**: System enters "Do Not Disturb" automatically upon mission start.
+
+---
+
+## 🟣 Mission 4: Pixel & Google Ecosystem Sync
+
+*Goal: The "Shared OS" experience between mobile and desktop.*
+
+- [ ] **Checkpoint 4.1: KDE-Connect/Lumina Bridge**
+  - Implement a specialized mission that bridges phone notifications and clipboard sharing into the HUD.
+  - **Success**: Phone battery and SMS notifications appear in the Observer HUD.
+- [ ] **Checkpoint 4.2: Google Cloud Pillar Storage**
+  - Integrate a FUSE-based mount or CLI tool to sync workspace assets directly into a mission.
+  - **Success**: Google Drive files appear as a local directory inside the containerized mission.

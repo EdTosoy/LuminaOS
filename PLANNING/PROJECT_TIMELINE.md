@@ -12,8 +12,10 @@ This document defines the 12-month delivery cycle for Lumina OS, moving from a r
 ### Phase 1: Strategic Goals
 
 - **Mission 1: The Orchestrator**: Implement the `lumina` Rust CLI.
-- **Mission 2: Stateless Sync**: Establish the `~/.lumina` virtual root and registry-to-symlink logic.
+- **Mission 2: Stateless Sync**: Establish the `~/.lumina` virtual root.
 - **Mission 3: Zero-Drag Performance**: Optimize the BORE kernel and `matugen` integration.
+- **Mission 4: Hardware Awareness**: Framework-specific optimizations.
+- **Mission 5: Native Bootstrap**: The "First 5 Minutes" setup wizard.
 
 **Phase 1 Success KPI**: A user can rebuild their entire desktop environment from a Git repo in < 60 seconds.
 
@@ -21,34 +23,51 @@ This document defines the 12-month delivery cycle for Lumina OS, moving from a r
 
 ## 🔵 Phase 2: The "Observer" Hub
 
-**Duration**: 4 Months (Apr – Jul 2025)
+**Duration**: 3 Months (Apr – Jun 2025)
 
 ### Phase 2: Strategic Goals
 
-- **Mission 4: Containerized Missions**: Native Podman/Docker orchestration for isolated dev environments.
-- **Mission 5: Gemini Observer**: Implement the read-only AI HUD for system logs and mission metadata.
-- **Mission 6: Contextual Flow**: Automatic profile switching based on active project context.
+- **Mission 1: Mission-Aware Isolation**: Native Podman/Docker orchestration.
+- **Mission 2: Gemini Observer**: Read-only AI HUD for system awareness.
+- **Mission 3: Contextual Flow**: Reactive event bus for theme/system states.
+- **Mission 4: Ecosystem Sync**: Pixel phone and Google Workspace integration.
 
-**Phase 2 Success KPI**: 100% isolation between project-level toolchains and the host system.
+**Phase 2 Success KPI**: 100% isolation between project toolchains and the host system.
 
 ---
 
 ## 🟣 Phase 3: The "Agentic" OS
 
-**Duration**: 5 Months (Aug – Dec 2025)
+**Duration**: 3 Months (Jul – Sep 2025)
 
 ### Phase 3: Strategic Goals
 
-- **Mission 7: Global Search**: Indexing of local mission data and Google Cloud assets.
-- **Mission 8: Framework Dashboard**: Deep hardware integration with the Framework Laptop's modular expansion cards.
-- **Mission 9: The Bazaar (Beta)**: Community marketplace for Shadcn-style widgets and themes.
+- **Mission 1: Global Semantic Search**: Single index for local and cloud data.
+- **Mission 2: Framework Dashboard**: Deep hardware expansion card management.
+- **Mission 3: The Bazaar**: Community marketplace and SDK launch.
 
-**Phase 3 Success KPI**: V1.0 Release. A fully immersive, intelligent, and modular workstation experience.
+**Phase 3 Success KPI**: V1.0 Release. A fully immersive, intelligent, and modular experience.
 
 ---
 
-## 🚀 Future Roadmap (2026+)
+## 🔴 Phase 4: The "Longevity" Hardening
 
-- **Atomic Rollbacks (V2.0)**: Deep integration with Btrfs/ZFS for multi-layer recovery.
-- **Silicon-Targeted Optimization**: Dedicated builds for ARM-based modular hardware.
-- **Collaborative Shell**: Multi-machine state synchronization via encrypted cloud pillars.
+**Duration**: 2 Months (Oct – Nov 2025)
+
+### Phase 4: Strategic Goals
+
+- **Mission 1: Deep Security**: Read-only root and mandatory mission sandboxing.
+- **Mission 2: Longevity Engine**: Kernel-level scheduler and thermal optimizations.
+- **Mission 3: Multi-Layer Rollbacks**: Snapshot-integrated state recovery.
+
+---
+
+## 🚀 Phase 5: The "Magic" Evolution
+
+**Duration**: 1 Month (Dec 2025)
+
+### Phase 5: Strategic Goals
+
+- **Mission 1: The "Magic" ISO**: Zero-touch, hardware-aware installer.
+- **Mission 2: Proactive Autonomy**: Transition to a proactive AI Assistant layer.
+- **Mission 3: Self-Healing OS**: Environment-aware repair and optimization logic.
