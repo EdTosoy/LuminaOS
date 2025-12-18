@@ -86,6 +86,7 @@ The Lumina OS vision is codified across these core documents:
 ### 🛠 Technical & Design
 
 - **[TECHNICAL_SOLUTIONS.md](file:///home/johncarlojose/Projects/luminaOS/TECHNICAL_SOLUTIONS.md)**: Architecture of the `lumina` binary and the Stateless Core.
+- **[MAINTENANCE_ARCHITECTURE.md](file:///home/johncarlojose/Projects/luminaOS/MAINTENANCE_ARCHITECTURE.md)**: How we solve "Arch Anxiety" via curated repos and atomic rollbacks.
 - **[UI_UX_SPEC.md](file:///home/johncarlojose/Projects/luminaOS/UI_UX_SPEC.md)**: Design system and Material You kinetix.
 - **[INTEGRATION_BLUEPRINT.md](file:///home/johncarlojose/Projects/luminaOS/INTEGRATION_BLUEPRINT.md)**: The Pixel Ecosystem and Google Service integration.
 - **[ROADMAP.md](file:///home/johncarlojose/Projects/luminaOS/ROADMAP.md)**: The step-by-step path to MVP and beyond.
