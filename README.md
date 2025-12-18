@@ -86,7 +86,10 @@ The Lumina OS vision is codified across these core documents:
 ### 📑 Production Planning & Governance
 
 - **[PLANNING/SYSTEM_ARCHITECTURE_ADR.md](file:///home/johncarlojose/Projects/luminaOS/PLANNING/SYSTEM_ARCHITECTURE_ADR.md)**: Architectural Decision Records (Why we chose Rust, OCI, etc).
-- **[PLANNING/RISK_REGISTER.md](file:///home/johncarlojose/Projects/luminaOS/PLANNING/RISK_REGISTER.md)**: Technical and market risk management.
+- **[PLANNING/SECURITY_ARCHITECTURE_ADR.md](file:///home/johncarlojose/Projects/luminaOS/PLANNING/SECURITY_ARCHITECTURE_ADR.md)**: Deep dive into the OS security model and Mission sandboxing.
+- **[PLANNING/PHASE_1_TECHNICAL_SPEC.md](file:///home/johncarlojose/Projects/luminaOS/PLANNING/PHASE_1_TECHNICAL_SPEC.md)**: Detailed technical blueprint for the Rust orchestrator.
+- **[PLANNING/RISK_REGISTER.md](file:///home/johncarlojose/Projects/luminaOS/PLANNING/RISK_REGISTER.md)**: Exhaustive technical and strategic risk management.
+- **[PLANNING/MARKET_IMPACT_STRATEGY.md](file:///home/johncarlojose/Projects/luminaOS/PLANNING/MARKET_IMPACT_STRATEGY.md)**: Strategic vision for global impact and competitive moats.
 - **[PLANNING/DEVELOPER_EXPERIENCE_DX.md](file:///home/johncarlojose/Projects/luminaOS/PLANNING/DEVELOPER_EXPERIENCE_DX.md)**: Standards for contribution and quality.
 - **[CONTRIBUTING.md](file:///home/johncarlojose/Projects/luminaOS/CONTRIBUTING.md)**: How to join the mission.
 - **[ROADMAP.md](file:///home/johncarlojose/Projects/luminaOS/ROADMAP.md)**: Milestone tracking and repository governance.

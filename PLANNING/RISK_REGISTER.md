@@ -9,6 +9,8 @@ This document identifies the critical risks to the Lumina OS project and explain
 | **Operational** | **Maintenance Burnout**: Managing custom repos (Lumina-Stable) is labor-intensive. | Medium | **Agentic Automation**: Utilize CI/CD scripts to auto-test upstream breaks and flag them. |
 | **Market** | **"The NixOS Problem"**: The technical barrier is too high for power users. | High | **Native Bootstrap**: Provide a "One-Click" setup that doesn't require learning a new language like Nix. |
 | **Social** | **Lack of Ecosystem**: No community widgets or themes being built. | High | **Bazaar Model**: Adopt the Shadcn "Source Distribution" model—making it trivial to copy and edit code. |
+| **Security** | **OCI Escapes**: Malicious code escaping a Mission container to the host. | Low | **Podman Rootless**: Mandatory use of rootless containers and SELinux/AppArmor profiles for Missions. |
+| **Strategic** | **Upstream Divergence**: Arch Linux makes a major structural shift. | Low | **Abstraction Layer**: The `lumina` CLI interacts with system APIs through a compatibility layer. |
 
 ---
 
