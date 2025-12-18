@@ -37,6 +37,15 @@ Unlike MacOS, which is tuned for one specific chip, our OS is tuned for the **Mo
 - **Transparent Security**: We provide the "Shield" (UFW/AppArmor) but give the user the "Keys." You can audit every kernel parameter we harden.
 - **The Anti-Walled-Garden**: Seamlessly work with *any* phone (Pixel included), *any* cloud (Google Drive/Cloud), and *any* hardware.
 
+### IV. Modern R&D Logic (The "Future-Proof" Advantage)
+
+We apply the core philosophies of the industry's most successful next-gen tools:
+
+- **Ownership** (Shadcn style): You "pull" the OS source; you don't just "install" a package.
+- **Reactivity** (Convex style): The shell is a real-time reactive environment.
+- **Immersion** (Cursor style): Lumina Assistant is baked into every workspace.
+- **Consolidation** (Bun style): A single, fast `lumina` binary for all system logic.
+
 ---
 
 ## 3. The "CachyOS" Competitive Edge
@@ -50,16 +59,18 @@ If we want to be mainstream, we must be faster than the fast.
 
 ## 4. Feature Projections
 
-### Phase A: Hardware Optimization
+### Phase A: Hardware Optimization & Ownership
 
 - [ ] Precision Touchpad drivers (Gestures rivaling Magic Trackpad).
-- [ ] Power-profile switching that matches Framework battery curves.
+- [ ] **The Lumina CLI**: A Rust-based unified tool for theme, sync, and install management.
+- [ ] **Codebase Distribution**: Making the shell widgets editable source code (Shadcn-style).
 
-### Phase B: The "Lumina" Orchestrator
+### Phase B: The "Lumina" Orchestrator & Reactivity
 
 - [ ] An AI agent (Lumina Assistant / Gemini based) that helps you manage **Desktop Workflows**, not just phone tasks.
+- [ ] **Reactive Event Bus**: Real-time system state updates for the entire shell.
 
-### Phase C: The "Lumina" Ecosystem
+### Phase C: The "Lumina" Ecosystem & Modularity
 
 - [ ] Native integration for Framework expansion card management.
 - [ ] Global "Light" theme management across all Google Web Apps.

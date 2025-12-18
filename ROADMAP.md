@@ -9,6 +9,7 @@
 *Focus: Establishing the Material You identity and the ChromeOS layout.*
 
 - [x] **Material You Engine**: Integration of `matugen` into Hyprland and Waybar.
+- [ ] **Lumina CLI (v0.1)**: Initial Rust tool for theme management and system bootstrap.
 - [ ] **Lumina-Shelf**: A custom Waybar configuration that mimics the ChromeOS bottom bar (Pill-shaped modules).
 - [ ] **Palette Daemon**: A background service that watches the wallpaper and updates terminal/browser colors in real-time.
 
@@ -29,6 +30,7 @@
 *Focus: Agentic features and system-aware AI.*
 
 - [ ] **Lumina Assistant**: A sidebar (replacing the current LLM setup) that has read-access to system logs, file structures, and active workspaces.
+- [ ] **Reactive Event Bus**: Native OS notification system for real-time widget updates (Convex-style).
 - [ ] **Contextual Commands**: "Lumina Assistant, summarize the PDF I just downloaded to Downloads."
 - [ ] **Lumina Search**: A global search that indices both local files and Google workspace data.
 
@@ -39,5 +41,6 @@
 *Focus: Performance leadership and hardware specific patches.*
 
 - [ ] **CachyOS Base Integration**: Defaulting to the BORE scheduler for all Lumina OS installs.
+- [ ] **Framework Module Dashboard**: Hardware-aware UI for expansion card management.
 - [ ] **Battery Optimizer**: Custom power profiles specifically for laptops running Lumina OS.
 - [ ] **Lumina-ISO**: A custom installation script that turns a fresh Arch install into a full Lumina OS workstation in one command.
