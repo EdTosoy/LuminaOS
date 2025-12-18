@@ -13,6 +13,7 @@
 Technology should never feel like a burden.
 
 - **Zero Friction**: From installation to daily workflow, every animation and interaction is tuned for the "weightless" feel of 144Hz performance.
+- **Circular Software**: Code that makes hardware last longer by reclaiming resources from bloat and telemetry.
 - **Logic Ownership**: You own the source of your OS. We distribute code, not just opaque binaries.
 - **Zero Bloat**: We only ship what is essential for a professional workstation.
 
@@ -20,9 +21,10 @@ Technology should never feel like a burden.
 
 Lumina OS isn't just a box for apps; it's a collaborative environment.
 
-- **Proactive Agency**: The system anticipates your needs, managing your workspaces and information through integrated AI.
+- **Proactive Agency**: The system anticipates your needs—managing your workspaces and information through integrated AI.
+- **Cognitive Sovereignty**: The right to deep work. The OS acts as a shield against the noise of the digital swarm.
 - **Reactive Life**: The OS responds instantly to changes in your hardware, your cloud, and your environment without manual polling.
-- **Context-Aware**: The OS understands what you're working on and adapts its UI to help you focus.
+- **Contextual Flow**: The OS understands what you're working on and adapts its UI to help you focus.
 
 ### III. Openness (The Framework Foundation)
 
