@@ -4,12 +4,13 @@ Lumina OS is built by professionals, for professionals. Our internal bar for cod
 
 ---
 
-## 1. The 10-Minute Contributor Rule
+## 2. The 10-Minute Contributor Rule
 
 A new developer should be able to clone the repo and have a working development environment in under 10 minutes.
 
 - **Pre-requisites**: Docker/Podman, Rust (stable).
 - **Tooling**: A single `just` or `make` file for all common tasks.
+- **Multi-Arch Readiness**: Contributor environments should ideally support ARM cross-compilation as a primary target.
 
 ---
 

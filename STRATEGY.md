@@ -55,6 +55,7 @@ We apply the core philosophies of the industry's most successful next-gen tools:
 - **Fail-Safe Reactivity**: The shell and binary follow a "Layered" approach. If the brain fails, the body (the OS) stays standing.
 - **Invisible Context**: No manual "modes." The OS senses your work via lightweight shell hooks.
 - **The Longevity Engine**: Software designed to make 5-year-old modular hardware feel faster than new "soldered" machines through silicon-native optimization (`v3/v4`).
+- **Silicon Agnostic Architecture**: By building on Rust and OCI, we solve the **ARM vs. x86** war before it starts. The "Lumina Experience" is portable across any instruction set.
 
 ---
 
