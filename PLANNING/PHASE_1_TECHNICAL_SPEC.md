@@ -14,6 +14,11 @@ The core binary will be a modular Rust CLI using `clap` for subcommands and `ser
 - `lumina sync`: Reads the registry and applies symlinks and package states.
 - `lumina add <module>`: Interactively adds a new config module (e.g., `waybar`, `hyprland`).
 
+### Multi-Arch Validation
+
+- **Requirement**: Mandatory `aarch64` (ARM64) cross-compilation in CI.
+- **Logic**: Rust core must remain architecture-agnostic to ensure "Future-Proof" hardware transitions.
+
 ---
 
 ## 2. Registry Schema (`lumina.yaml`)
@@ -54,11 +59,12 @@ To ensure stability, the CLI follows a **Staging -> Linking** pattern.
 
 ---
 
-## 4. Performance Goals
+## 4. Performance Goals & KPIs
 
 - **Registry Parse**: < 10ms.
 - **Symlink Sync (100 files)**: < 100ms.
 - **Binary Footprint**: < 15MB (Statically linked).
+- **Cold Boot Interference**: Zero (The binary should not delay shell login).
 
 ---
 

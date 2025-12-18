@@ -1,6 +1,16 @@
 # Developer Experience (DX) Specification
 
-Lumina OS is built by professionals, for professionals. Our internal bar for code quality and contributor flow must reflect our product's "Zero-Drag" promise.
+Lumina OS is built by professionals, for professionals. Our internal bar for code quality and contributor flow must reflect our product's "Zero-Drag" promise. We operate under a **"Human-led, Agent-executed"** model.
+
+---
+
+## 1. The "Chief Editor" Workflow
+
+While AI agents (like Antigravity) handle the heavy lifting of code generation and documentation structure, the human user maintains the role of **Chief Editor**.
+
+- **Architectural Veto**: The Human Editor must approve any architectural shift before implementation.
+- **Taste Verification**: AI produces logic; the Human provides **Taste**. All UI/UX changes must be visually verified for "WOW factor."
+- **ADR Enforcement**: No significant technical fork is taken without a physical Architectural Decision Record (ADR) file being created first.
 
 ---
 
@@ -14,7 +24,7 @@ A new developer should be able to clone the repo and have a working development 
 
 ---
 
-## 2. Commit & Review Standards
+## 3. Commit & Review Standards
 
 We follow **Conventional Commits** to ensure a clean, machine-readable history.
 
@@ -31,7 +41,7 @@ We follow **Conventional Commits** to ensure a clean, machine-readable history.
 
 ---
 
-## 3. The "Library of Truth"
+## 4. The "Library of Truth"
 
 Every significant code change must be accompanied by an update to the core `.md` library.
 
@@ -40,7 +50,7 @@ Every significant code change must be accompanied by an update to the core `.md`
 
 ---
 
-## 4. Testing Philosophy
+## 5. Testing Philosophy
 
 - **Unit Tests**: Mandatory for all logic in the `lumina` Rust binary.
 - **Integration Tests**: Mission-Aware environments must be tested for registry-consistency.
