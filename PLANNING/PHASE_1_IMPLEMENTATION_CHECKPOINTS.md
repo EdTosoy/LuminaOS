@@ -70,6 +70,19 @@ This document provides granular, "No-Vagueness" directives for AI agents executi
 
 ---
 
+## 🟣 Mission 5: The Native Bootstrap (Welcome Flow)
+
+*Goal: The first 5-minute experience on a live system.*
+
+- [ ] **Checkpoint 5.1: CLI-Based Welcome**
+  - Implement a `lumina welcome` command that guides the user through Git setup and Registry creation.
+  - **Success**: User has a functional `lumina.yaml` in `~/.config/lumina/` after wizard completion.
+- [ ] **Checkpoint 5.2: Matugen Auto-Generation**
+  - Logic to pick a default "Lumina Gold/Obsidian" palette based on hardware detection.
+  - **Success**: System colors shift to the primary Lumina palette immediately after init.
+
+---
+
 ## 🚀 Final Verification (Phase 1 Exit)
 
 - [ ] **Checkpoint 5.1: The "Clean Machine" Test**
