@@ -35,7 +35,17 @@ Lumina OS is built for builders. It is specifically designed for:
 
 ---
 
-## ✨ Key Features
+## 📚 Product Philosophy
+
+Lumina OS is built on the shoulders of giants. We apply:
+
+- **Zero to One**: Creating a 10x shift in workstation recovery and longevity.
+- **Jobs to be Done**: Focusing on the human outcomes of focus and autonomy.
+- **Conceptual Integrity**: A unified system directed by a single Rust-core orchestrator.
+
+Explore our full [Product Wisdom Library](file:///home/johncarlojose/Projects/luminaOS/PRODUCT_WISDOM.md).
+
+---
 
 | Feature | Description |
 | :--- | :--- |
