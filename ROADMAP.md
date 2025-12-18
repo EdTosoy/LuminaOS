@@ -44,3 +44,18 @@
 - **Life-Cycle Installer**: The agent-led "Magic" ISO for zero-touch hardware setup.
 - **Lumina SDK (Bazaar)**: The community widget market and decentralized registry.
 - **Longevity Engine (v1.0)**: Deep silicon-native kernel optimizations.
+
+---
+
+## 🏗️ Repository & Governance: "Lumina-Flow"
+
+To maintain production-grade quality, the project follows a tiered branching model:
+
+- **`main`**: The Stable Core. Reflects the current production-ready strategic state.
+- **`develop`**: The Integration Hub. All Phase 1 implementation (CLI Core) occurs here.
+- **`feature/*`**: Atomic missions. Merged into `develop` via Pull Request only.
+- **`docs/*`**: Significant strategic shifts or technical specification updates.
+
+### Community & Contribution
+
+We welcome contributions that respect our pillars. See [CONTRIBUTING.md](file:///home/johncarlojose/Projects/luminaOS/CONTRIBUTING.md) for details on how to join the mission.
